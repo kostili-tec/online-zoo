@@ -8,19 +8,17 @@ body {
   margin-top: -80px;
   width: 1600px;
   height: 780px;
-  background: url(../assets/images/giantPandaBG.jpg);
-  // display: flex;
-  // justify-content: flex-end;
-  // padding-right: 220px;
+  background: url(../assets/images/watch-section/giantPandaBG.jpg);
 }
+
 .wath-container{
   height: auto;
-  padding-top: 80px;
-  // margin-right: 217px;
+  padding-top: 80px;  
   display: flex;
   justify-content: flex-end;
   align-items: flex-end;
 }
+
 .watch-container__contant{
   width: 500px;
   height: 700px;
