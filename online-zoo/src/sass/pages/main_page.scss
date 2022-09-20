@@ -1,3 +1,58 @@
 body {
   font-family: 'RobotoRegular';
 }
+
+.section-watch {
+  position: relative;
+  margin: 0 auto;
+  margin-top: -80px;
+  width: 1600px;
+  height: 780px;
+  background: url(../assets/images/giantPandaBG.jpg);
+  // display: flex;
+  // justify-content: flex-end;
+  // padding-right: 220px;
+}
+.wath-container{
+  height: auto;
+  padding-top: 80px;
+  // margin-right: 217px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+.watch-container__contant{
+  width: 500px;
+  height: 700px;
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+}
+
+.h2-watch {
+  width: 500px;
+  height: 400px;
+  font-family: 'RobotoBold';
+  font-size: 106.496px;
+  line-height: 75%;
+  text-align: center;
+  text-transform: uppercase;
+  color: $color-white;
+  margin-bottom: 58px;
+  z-index: 10;
+  &::before{
+    content: '';
+    display: block;
+    position: absolute;
+    width: 465px;
+    height: 465px;
+    background: $color-orange-gradient;
+    border-radius: 50%;
+    z-index: -1;
+    transform: translateX(-70px) translateY(-74px);
+  }
+}
+
+.h2-watch__span{
+  color: $color-yellow;
+}

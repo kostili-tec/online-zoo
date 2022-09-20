@@ -5,6 +5,8 @@
   color: $color-white;
   display: flex;
   justify-content: center;
+  position: relative;
+  z-index: 10;
 }
 
 .header-container{
