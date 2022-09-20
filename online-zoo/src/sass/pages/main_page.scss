@@ -1,11 +1,12 @@
 body {
   font-family: 'RobotoRegular';
+  margin: 0 auto;
 }
 
 .section-watch {
   position: relative;
   margin: 0 auto;
-  margin-top: -80px;
+  margin-top: -80px;  
   width: 1600px;
   height: 780px;
   background: url(../assets/images/watch-section/giantPandaBG.jpg);
@@ -53,4 +54,63 @@ body {
 
 .h2-watch__span{
   color: $color-yellow;
+}
+
+.section-backstage{
+  padding-top: 140px;
+  margin: 0 auto;
+  margin-bottom: 180px;
+  height: 605px;
+  max-width: 1600px;
+  background-image: url(../assets/images/backstage-section/flower_foto1.jpg);
+  background-repeat: no-repeat;
+  background-position: right 12px;
+}
+
+.backstage-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.backstage-container__contant{
+  display: flex;
+  justify-content: center;
+  gap: 87px;
+  img {
+    width: 609px;
+    height: 403px;
+  }
+}
+
+.backstage-contant{
+  color: $color-dark-text;
+  align-self: flex-start;
+}
+
+.backstage-contant__h2{
+  font-family: 'RobotoRegular';
+  font-weight: normal;  
+  font-size: 48px;
+  line-height: 120%;
+  margin-top: 0;
+  margin-bottom: 20px;
+  
+}
+
+.backstage-contant__p{
+  font-size: 16px;
+  line-height: 130%;
+}
+.p-title{
+  font-size: 24px;
+  line-height: 120%;
+}
+#p-title__backstage{
+  margin-top: 54px;
+  margin-bottom: 34px;
+}
+
+#p-text__backstage{
+  line-height: 140%;
 }
