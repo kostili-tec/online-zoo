@@ -1,6 +1,7 @@
 body {
   font-family: 'RobotoRegular';
   margin: 0 auto;
+  // box-sizing: border-box;
 }
 
 .section-watch {
@@ -59,8 +60,8 @@ body {
 .section-backstage{
   padding-top: 140px;
   margin: 0 auto;
-  margin-bottom: 180px;
-  height: 605px;
+  margin-bottom: 83px;
+  height: 500px;
   max-width: 1600px;
   background-image: url(../assets/images/backstage-section/flower_foto1.jpg);
   background-repeat: no-repeat;
@@ -113,4 +114,194 @@ body {
 
 #p-text__backstage{
   line-height: 140%;
+}
+
+///////// PETS /////////////////
+
+.section-pets {
+  margin-bottom: 100px;
+  position: relative;
+  height: 1106px;
+  &::before {
+    content: '';
+    height: 460px;
+    width: 292px;
+    background-image: url(../assets/images/pets-section/palm_foto.jpg);
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+  }
+  &::after {
+    content: '';
+    background-image: url(../assets/images/pets-section/strelitzia.jpg);
+    background-repeat: no-repeat;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 368px;
+    height: 275px;
+  }
+}
+
+.pets-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.pets-view {
+  width: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 18px 28px;
+  position: relative;
+  margin-bottom: 80px;
+ /*  &::before{
+    content: "";
+    // background-image: url(../assets/images/svg/arrow_left.svg);
+    width: 62px;
+    height: 62px;
+    border-radius: 50%;
+    background: $color-orange url(../assets/images/svg/arrow_left.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    margin-top: -31px;
+    transform: translateX(-80px);
+    cursor: pointer;
+  }
+
+  &::after {
+    content: '';
+    width: 62px;
+    height: 62px;
+    border-radius: 50%;
+    background: $color-orange url(../assets/images/svg/arrow_left.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    margin-top: -31px;
+    transform: translateX(80px) rotate(180deg);
+    cursor: pointer;
+  } */
+}
+
+.slider-button{
+  width: 62px;
+  height: 62px;
+  border: none;
+  border-radius: 50%;
+  padding: 0;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  // transition: all 0.2s;  // don't blink mothfucker!!!!!!
+  background: $color-orange-gradient;
+  background-repeat: no-repeat;
+  background-position: center;
+ /*  &:hover{
+    background: $color-orange-hover;
+  } */
+}
+#slided-btn1{  
+  left: 0;
+  top: 50%;
+  margin-top: -31px;
+  transform: translateX(-80px);
+  cursor: pointer;
+}
+#slided-btn2{ 
+  right: 0;
+  top: 50%;
+  margin-top: -31px;
+  transform: translateX(80px) rotate(180deg);
+  cursor: pointer;
+}
+.arrow-svg{
+  width: 30px;
+  height: 10px;
+}
+.pets-view__card {
+  width: 366px;
+  height: 426px;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid $color-orange;
+  border-color: $color-orange-gradient;
+  border-radius: 5px;
+  color: $color-black;
+  position: relative; 
+  z-index: 50; 
+  transition: linear 0.2s;
+}
+
+.pets-img__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.pets-img {
+  width: 366px;
+  height: 366px;
+  position: relative;
+  transition: linear 0.2s;
+  cursor: pointer;
+  &:hover {
+    transform: scale(1.05);
+  }
+}
+
+
+.pets-descpiption{
+  height: auto;
+  width: auto;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 8px 12px 0 16px;
+  z-index: -1;
+  transform: translateY(-55px);
+  transition: ease 0.5s;
+}
+
+.pets-text {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.pets-h3 {
+  font-family: 'RobotoMedium';
+  font-size: 16px;
+  line-height: 140%;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.pets-p {
+  font-family: 'RobotoLight';
+  font-size: 15px;
+  line-height: 120%;
+  margin: 0;  
+}
+
+.pets-food__svg-banana{
+  height: 37px;
+  width: 33px;
+}
+
+.pets-food__svg-meet{
+  width: 48px;
+  height: 38px;
 }
