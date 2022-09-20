@@ -1,0 +1,89 @@
+.header{
+  background-color: $color-black;
+  height: 80px;
+  width: 100%; 
+  color: $color-white;
+  display: flex;
+  justify-content: center;
+}
+
+.header-container{
+  margin: 0 220px;
+  height: 100%;
+  max-width: 1160px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-grow: 1;
+}
+
+.logo-link{
+  outline: none;
+  text-decoration: none;
+  color: $color-white;
+}
+
+.logo-container {
+  width: 80px;
+  height: 50px;
+  border: 1px solid #FFFFFF;
+  border-radius: 2px;
+  position: relative;
+}
+
+.logo-h1 {
+  font-family: 'RobotoRegular';
+  margin: 0;
+  margin-top: 3.55px;
+  font-size: 19.0145px;
+  line-height: 120%;
+  font-style: normal;
+  font-weight: 400;
+  text-align: center;
+  &::after{     
+    content: '';   
+    background-image: url(../assets/images/bamboo.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    
+    display: block;
+    position: relative;
+    left: 11px;
+    
+    top: -27px;
+    width: 10px;
+    height: 25px;        
+  }
+}
+
+.nav {  
+  align-content: flex-start;
+  flex-grow: 2;
+  margin-left: 22px;  
+}
+.nav-ul {
+  display: flex;
+  flex-direction: row;
+  gap: 58px;
+}
+
+.nav-li {
+  list-style-type: none;
+}
+
+#nav-about {
+  color: $color-orange;
+}
+
+.nav__li-a, .header-designed {
+  font-family: 'RobotoMedium';
+  outline: none;
+  text-decoration: none;
+  color: $color-white;
+  font-size: 16px;
+  line-height: 140%; 
+  transition: 0.2s linear;
+  &:hover {
+    color: $color-orange;
+  }
+}
