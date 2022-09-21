@@ -1,0 +1,6 @@
+@mixin grad-border($color, $width, $height) {
+  width: $width;
+  height: $height;
+  background: $color;
+  border-radius: 5px;
+}

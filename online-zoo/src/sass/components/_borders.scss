@@ -1,0 +1,12 @@
+.pets-border {
+  @include grad-border($color-grad-border, 366px, 426px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.pick-border {
+  @include grad-border($color-grad-border, 168px, 168px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

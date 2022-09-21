@@ -131,6 +131,7 @@ body {
     position: absolute;
     left: 0;
     bottom: 0;
+    z-index: -1;
   }
   &::after {
     content: '';
@@ -141,6 +142,7 @@ body {
     bottom: 0;
     width: 368px;
     height: 275px;
+    z-index: -1;
   }
 }
 
@@ -229,17 +231,19 @@ body {
   height: 10px;
 }
 .pets-view__card {
-  width: 366px;
-  height: 426px;
+  width: 364px;
+  height: 424px;
   display: flex;
   flex-direction: column;
-  border: 1px solid $color-orange;
-  border-color: $color-orange-gradient;
+  /* border: 1px solid $color-orange;
+  border-color: $color-orange-gradient; */
   border-radius: 5px;
   color: $color-black;
   position: relative; 
   z-index: 50; 
   transition: linear 0.2s;
+  background-color: $color-white;
+  overflow: hidden;
 }
 
 .pets-img__container {
@@ -251,8 +255,8 @@ body {
 }
 
 .pets-img {
-  width: 366px;
-  height: 366px;
+  width: 364px;
+  height: 364px;
   position: relative;
   transition: linear 0.2s;
   cursor: pointer;
@@ -402,14 +406,14 @@ body {
 }
 
 .pick-card__square {
-  height: 168px;
-  width: 168px;
+  height: 166px;
+  width: 166px;
   background: $color-white;
   border-radius: 5px;
   display: flex;
   justify-content: center;
   align-items: center;
-  border: 1px solid #F9804B;
+  // border: 1px solid #F9804B;
   border-radius: 5px;
 }
 

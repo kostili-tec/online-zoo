@@ -1,8 +1,10 @@
 @import 'abstract/variables';
+@import 'abstract/mixins';
 
 @import 'base/fonts';
 
 @import 'components/buttons';
+@import 'components/borders';
 
 @import 'layout/container';
 @import 'layout/navigation';
