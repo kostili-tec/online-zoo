@@ -10,3 +10,11 @@
   justify-content: center;
   align-items: center;
 }
+
+.feedback-border {
+  @include grad-border($color-feedback-pink-border, 268px, 391px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+}

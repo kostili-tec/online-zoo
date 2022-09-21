@@ -1,7 +1,7 @@
 body {
   font-family: 'RobotoRegular';
   margin: 0 auto;
-  // box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 .section-watch {
@@ -318,6 +318,7 @@ body {
   height: 1004px;
   color: $color-dark-text;
   padding-top: 69px;
+  box-sizing: border-box;
 }
 
 .pick-contant__container{
@@ -459,4 +460,131 @@ body {
   font-size: 16px;
   line-height: 140%;
   margin-top: 30px;
+}
+
+//////// FEEDBACK //////////
+
+.section-feedback {
+  position: relative;
+
+}
+
+.feedback-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  &::after {
+    content: "";
+    background-image: url(../assets/images/testimonials-section/leaf.png);
+    background-repeat: no-repeat;
+    width: 247px;
+    height: 408px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    transform: translateY(130px) translateX(20px);
+  }
+}
+
+.feedback-h3 {
+  font-size: 36px;
+  line-height: 130%;
+  color: $color-dark-text;
+  margin: 140px 0 47px;
+}
+
+.feedback-cards{
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 30px;
+  margin-bottom: 22px;
+}
+
+.feedback-card {
+  width: 264px;
+  height: 387px;
+  background-color: $color-gray-feedback;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  padding: 15px 16px;
+  box-sizing: border-box;
+}
+
+.card-profile__container{
+  display: flex;
+  margin-bottom: 10px;
+}
+
+.profile-data__container{
+  display: flex;
+  flex-direction: column;
+}
+
+.profile-img {
+  width: 37px;
+  height: 37px;
+  margin-right: 10px;
+}
+.card-h5 {
+  margin: 0;
+  color: $color-black;
+  font-size: 16px;
+  line-height: 120%;
+}
+
+.profile-span, .feedback-p  {
+  margin: 0;
+  font-family: 'RobotoLight';
+  font-size: 15px;
+  line-height: 120%;
+  color: #BDBDBD;
+}
+
+.profile-span {
+  margin-right: 6px;
+}
+
+.feedback-p {
+  color: #767474;
+  max-height: 309px;
+  overflow: hidden;
+}
+
+#border-line {
+  width: 599px;
+  height: 8px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 32px;
+  cursor: pointer;
+}
+
+.feedback-cards__line {
+  background: #F5F7F6;
+  border-radius: 5px;
+  width: 597px;
+  height: 6.5px;
+  display: flex;
+  align-items: center;
+  
+}
+
+.line-progress {
+  width: 115.19px;
+  height: 6px;
+  background: #FE9013;
+  border-radius: 5px;
+  transition: ease-in 0.15s;
+}
+
+.feedback-cards__line:hover > .line-progress{
+  background: $color-orange-hover;
+}
+
+#feedback-button {
+  align-self: flex-start;
+  margin-bottom: 180px;
 }
