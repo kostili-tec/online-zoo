@@ -356,9 +356,6 @@ body {
   margin: 40px 0 15px;
 }
 
-.pick-contant__info{
-
-}
 
 .pick-h4 {
   font-size: 24px;
@@ -482,7 +479,9 @@ body {
     position: absolute;
     right: 0;
     bottom: 0;
-    transform: translateY(130px) translateX(20px);
+    transform: translateY(130px);
+    z-index: -1;
+    
   }
 }
 
