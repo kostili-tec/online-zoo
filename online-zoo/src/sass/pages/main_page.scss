@@ -119,7 +119,7 @@ body {
 ///////// PETS /////////////////
 
 .section-pets {
-  margin-bottom: 100px;
+  // margin-bottom: 100px;
   position: relative;
   height: 1106px;
   &::before {
@@ -304,4 +304,155 @@ body {
 .pets-food__svg-meet{
   width: 48px;
   height: 38px;
+}
+
+/////// PICK /////////////
+
+.section-pick{
+  background: $color-bg-pick-section;
+  opacity: 0.9;
+  height: 1004px;
+  color: $color-dark-text;
+  padding-top: 69px;
+}
+
+.pick-contant__container{
+  height: 835px;
+  width: 1160px;
+  background: rgba(253, 253, 255, 0.52);
+  backdrop-filter: blur(2px);
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  // margin-top: 69px;
+}
+
+.pick-contant__info{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-left: 40px;
+}
+
+.pick-cards{
+  display: flex;
+  gap: 130px;
+  position: relative;
+  margin-bottom: 35px;
+}
+
+.pick-h2{
+  font-style: normal;
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 120%;
+  color: #FE9013;
+  margin: 40px 0 15px;
+}
+
+.pick-contant__info{
+
+}
+
+.pick-h4 {
+  font-size: 24px;
+  line-height: 120%;
+  margin: 15px 0 20px;
+}
+
+.pick-p__bold, .pick-p {
+  font-size: 16px;
+  line-height: 130%;
+}
+
+.pick-p__bold {
+  font-family: 'RobotoMedium';
+  font-weight: 500;
+  margin: 20px 0 5px;
+}
+
+.pick-p {
+  margin: 5px 0;
+}
+
+#pick-p__a{
+  color: $color-dark-text;
+  outline: none;
+  text-decoration: none;
+  border-bottom: 1px solid #FE9013;
+  padding-bottom: 2px;
+  &:hover {
+    color: $color-orange-hover;
+  }
+  &:active {
+    color: $color-green-active;
+    border-color: $color-green-active;
+  }
+}
+
+.pick-h3 {
+  font-size: 36px;
+  line-height: 130%;
+  margin-top: 60px;
+}
+
+.pick-card {
+  max-width: 170px;
+}
+
+.pick-card__square {
+  height: 168px;
+  width: 168px;
+  background: $color-white;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #F9804B;
+  border-radius: 5px;
+}
+
+#pick-card__zoo {
+  &::before {
+    content: "";
+    background-image: url(../assets/images/svg/vector_arrow_right.svg);
+    width: 70px;
+    height: 36px;
+    position: absolute;    
+    bottom: 50%;
+    margin-bottom: 36px;
+    transform: translateX(-100px);
+  }
+  &::after {
+    content: "";
+    background-image: url(../assets/images/svg/vector_arrow_right.svg);
+    width: 70px;
+    height: 36px;
+    position: absolute;    
+    bottom: 50%;
+    margin-bottom: 36px;
+    transform: translateX(200px);
+  }
+}
+
+#pick-card__pay-svg {
+  width: 110px;
+  height: 60px;
+}
+
+#pick-card__zoo-svg {
+  width: 86px;
+  height: 98px;
+}
+
+#pick-card__monkey-svg {
+  width: 125px;
+  height: 72px;
+}
+
+.pick-card__h5 {
+  font-size: 16px;
+  line-height: 140%;
+  margin-top: 30px;
 }
