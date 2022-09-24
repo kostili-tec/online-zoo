@@ -18,3 +18,19 @@
   align-items: center;
   border-radius: 20px;
 }
+
+.input-border {
+  @include grad-border($color-grad-border, 228px, 42px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 2px;
+  box-sizing: border-box;
+}
+
+.input-border__invalid {
+  background: $color-red-mistake;
+}
+.input-border__valid {
+  background: $color-green-active;
+}

@@ -1,0 +1,143 @@
+.footer {
+  height: 443px;
+  background-color: $color-footer-bg;
+  padding: 15px 0 50px;
+  box-sizing: border-box;
+}
+
+.footer-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.footer-top__container {
+  display: flex;
+  justify-content: space-between;
+}
+
+#footer-logo{
+  margin-top: 22px;
+}
+
+.footer-h3 {
+  // font-family: 'RobotoRegular';
+  font-weight: 400;
+  color: $color-white;
+  font-size: 24px;
+  line-height: 120%;
+  margin-left: 33px;
+  margin-bottom: 13px;
+}
+
+.input-container {
+  display: flex;
+  width: 400px;
+  justify-content: right;
+  gap: 10px;
+}
+
+.footer-input {
+  background-color: $color-footer-bg;
+  width: 226px;
+  height: 40px;
+  padding: 0;
+  padding-left: 10px;
+  border: none;
+  color: #BDBDBD;
+  box-sizing: border-box;
+  &:focus-visible {
+    border: none;
+    outline: none;
+  }  
+}
+.footer-input__invalid {
+  color: $color-red-mistake;
+}
+
+.footer-bottom__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.social-links__container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  transition: ease-in 0.3ms;
+}
+
+.social-link {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  transition: ease-in 0.3ms;
+  &:hover > .social-link__cyrcle {
+    background: $color-green-active;
+  }
+  &:hover > .social_link__p {
+    color: $color-green-active;
+  }
+}
+
+.social-link__cyrcle {
+  height: 26px;
+  width: 26px;
+  border-radius: 50%;
+  background: rgba(196, 196, 196, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: ease 0.5ms;
+  margin-right: 10px;
+}
+
+.social_link__p {
+  margin-left: 12px;
+  text-decoration: none;
+  outline: none;
+  color: $color-white;
+  font-size: 16px;
+  line-height: 140%;
+  transition: ease 0.5ms;
+  margin: 0;
+}
+
+#facebook-svg {
+  width: 8px;
+  height: 16px;
+}
+
+#twitter-svg {
+  width: 16px;
+  height: 14px;
+}
+
+#instagram-svg {
+  width: 16px;
+  height: 14px;
+}
+
+#youtube-svg {
+  width: 18px;
+  height: 13px;
+}
+
+#nav-footer__ul {
+  margin: 0;
+  padding-left: 96px;
+}
+
+.footer-p {
+  font-family: 'RobotoThin';
+  font-weight: 100;
+  font-size: 16px;
+  line-height: 138%;
+  color: #a7a7a7;
+  margin: 0;
+  &:last-child {
+    margin-top: 10px;
+  }
+}

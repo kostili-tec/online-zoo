@@ -59,10 +59,14 @@
 }
 
 .nav {  
-  align-content: flex-start;
-  flex-grow: 2;
   margin-left: 22px;  
 }
+
+#nav-header {
+  align-content: flex-start;
+  flex-grow: 2;
+}
+
 .nav-ul {
   display: flex;
   flex-direction: row;
