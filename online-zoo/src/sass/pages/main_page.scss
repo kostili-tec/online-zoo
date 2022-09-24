@@ -260,9 +260,28 @@ body {
   position: relative;
   transition: linear 0.2s;
   cursor: pointer;
-  &:hover {
-    transform: scale(1.05);
-  }
+}
+
+.pets-img__hover {
+  filter: brightness(50%);
+  transform: scale(1.05);
+}
+
+.pets-p__info {
+  position: absolute;
+  color: $color-white;
+  font-family: 'RobotoLight';
+  line-height: 140%;
+  transform: translateY(360px);
+  transition: ease-in-out 0.3s;
+  text-align: justify;
+  z-index: -1;
+  padding: 10px;
+}
+
+.pets-p__info-show {
+  transform: translateY(0px);
+  z-index: 1;
 }
 
 
@@ -274,9 +293,6 @@ body {
   justify-content: space-between;
   align-items: center;
   margin: 8px 12px 0 16px;
-  z-index: -1;
-  transform: translateY(-55px);
-  transition: ease 0.5s;
 }
 
 .pets-text {
