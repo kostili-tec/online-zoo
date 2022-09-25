@@ -1,0 +1,123 @@
+///// AMOINT INPUT ///////
+
+.feed-contant__radio-input:checked, .feed-contant__radio-input:not(checked) {
+  position: absolute;
+  left: -9999px;
+}
+
+.feed-contant__radio-input:checked + label, .feed-contant__radio-input:not(checked) + label {
+  display: inline-block;
+  position: relative;
+  padding-left: 15px;
+  line-height: 20px;
+  cursor: pointer;
+  padding-bottom: 12px;
+  z-index: 5;
+}
+
+.feed-contant__radio-input:checked + label::before, 
+.feed-contant__radio-input:not(checked) + label::before { 
+  content: "";
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 10px;
+  height: 10px;
+  border: 1px solid #dddddd;
+  background-color: #FFEE2E;
+  border-radius: 100%;
+}
+
+.feed-contant__radio-input:checked + label::after, 
+.feed-contant__radio-input:not(checked) + label::after { 
+  content: "";
+  background-image: url(../assets/images/svg/roller_icon.svg);
+  position: absolute;
+  -webkit-transition: all 0.2s ease;
+  -moz-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+  left: -14px;
+  top: -14px;
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+  // background-color: #e145a3;
+}
+
+.feed-contant__radio-input:not(checked) + label::after { 
+  opacity: 0;
+}
+
+.feed-contant__radio-input:checked + label::after {
+  opacity: 1;
+}
+
+.feed-contant__radio-input {
+  z-index: 5;
+}
+
+///// AMOINT INPUT END ///////
+
+///// ANOTHER AMOINT INPUT ///////
+
+.period__radio-input:checked,
+.period__radio-input:not(checked) {
+  position: absolute;
+  left: -9999px;
+}
+
+.period__radio-input:checked + label,
+.period__radio-input:not(checked) + label {
+  display: inline-block;
+  position: relative;
+  padding-left: 28px;
+  line-height: 20px;
+  cursor: pointer;
+}
+
+.period__radio-input:checked + label::before,
+.period__radio-input:not(checked) + label::before {
+  content: "";
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 16px;
+  height: 16px;
+  border: 1px solid #FE9013;
+  background-color: transparent;
+  border-radius: 100%;
+  box-sizing: border-box;
+}
+
+.period__radio-input:checked + label::after,
+.period__radio-input:not(checked) + label::after {
+  content: "";
+  position: absolute;
+  -webkit-transition: all 0.2s ease;
+  -moz-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+  left: 0px;
+  top: 0px;
+  width: 16px;
+  height: 16px;
+  border-radius: 100%;
+  box-sizing: border-box;
+  background-color: $color-green-active;
+}
+
+.period__radio-input:not(checked) + label::after {
+  opacity: 0;
+}
+
+.period__radio-input:checked + label::after {
+  opacity: 1;
+}
+
+/* .period__radio-input:checked ~ label {
+  color: $color-green-active;
+} */
+
+///// ANOTHER AMOINT INPUT END  ///////
+

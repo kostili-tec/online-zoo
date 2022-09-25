@@ -58,6 +58,10 @@ module.exports = (develop) => ({
       template: path.resolve(__dirname, './src/pages/main/index.html'),
       filename: 'index.html',
     }),
+    new HtmlWebpackPlugin({
+      template: path.resolve(__dirname, './src/pages/donate/donate.html'),
+      filename: 'donate.html',
+    }),
     new MiniCssExtractPlugin({
       filename: '[name].[contenthash].css'
     }),

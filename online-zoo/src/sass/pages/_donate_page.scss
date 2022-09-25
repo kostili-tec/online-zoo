@@ -1,0 +1,261 @@
+.section-panda {
+  height: 390px;
+  background: url(../assets/images/donate/panda_bg.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  // transform: translateY(-4px);
+  margin-top: -4px;
+}
+
+.section-feed {
+  height: 1482px;
+  background: $color-bg-pick-section;
+  opacity: 0.9;
+  color: $color-dark-text;
+  box-sizing: border-box;
+}
+
+.feed-container {
+  box-sizing: border-box;
+  padding-top: 40px;
+}
+
+.feed-h3 {
+  margin-top: 0;
+  margin-bottom: 5px;
+  font-weight: normal;
+  font-size: 36px;
+  line-height: 130%;
+  color: $color-white;
+}
+
+.feed-p {
+  // font-family: 'RobotoMedium';
+  font-weight: 500;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 140%;
+  color: $color-white;
+  margin-top: 10px;
+  margin-bottom: 47px;
+}
+
+#donation-h3 {
+  font-size: 36px;
+  line-height: 130%;
+  color: #FE9013;
+  margin-bottom: 60px;
+}
+
+.feed-contant__container {
+  height: 964px;
+  padding: 40px 92px 62px;
+  box-sizing: border-box;
+}
+
+.feed-contant__container-h2 {
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 120%;
+  color: #FE9013;
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.feed-contant__container-subtitle {
+  font-size: 24px;
+  line-height: 120%;
+  color: $color-dark-text;  
+  align-self: flex-start;
+  margin-top: 10px;
+}
+
+.feed-contant__diet-container {
+  display: flex;
+  gap: 90px;
+  margin-top: 35px;
+  margin-bottom: 47px;
+}
+
+
+.diet-container__info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 75px;
+  position: relative;
+  &::after {
+    content: "";
+    background: url(../assets/images/svg/x_icon.svg);
+    width: 14px;
+    height: 14px;
+    position: absolute;
+    right: 0;
+    bottom: 50%;
+    margin-bottom: 17px;
+    transform: translateX(24px);
+  }
+}
+
+.diet-container__h3 {
+  font-family: 'RobotoMedium';
+  font-weight: 500;
+  font-size: 72px;
+  line-height: 80%;
+  color: $color-black;
+  margin: 0;
+}
+
+.diet-container__p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 140%;
+  color: $color-dark-text;
+  margin-top: 10px;
+}
+
+.feed-svg {
+  width: 284px;
+  height: 246px;
+  margin-right: 10px;
+}
+
+.feed-contant__form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.feed-contant__form-label {
+  color: $color-black;
+  font-size: 16px;
+  line-height: 140%;
+  font-family: 'RobotoRegular';
+  font-weight: 500;
+  display: block;
+  padding-left: 5px;
+  margin-bottom: 17px;
+  align-self: flex-start;
+}
+
+.feed-contant__radio-container {
+ width: 100%;
+  height: 27px;
+  background: #404950;
+  border-radius: 2px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 26px;
+  box-sizing: border-box;
+  position: relative;
+  margin-bottom: 13px;
+  &::after {
+    content: '';
+    width: 94%;
+    height: 2px;
+    background: #72828E;
+    position: absolute;
+    transform: translateX();
+  }
+}
+
+
+
+.feed-contant__radio-values {
+  display: flex;
+  flex-direction: row;
+  // justify-content: space-between;
+  gap: 58px;
+  margin-bottom: 49px;
+}
+
+.radio-value__container {
+  display: flex;
+  align-items: center;
+  &:nth-child(3) {
+    margin-right: 10px;
+  }
+  &:nth-child(4) {
+    margin-right: 15px;
+  }
+  &:nth-child(n+5) {
+    margin-right: 22px;
+  }
+}
+
+.dollar-svg {
+  width: 10px;
+  height: 20px;
+  fill: #333B41;
+}
+
+.radio-value__number {
+  font-family: 'RobotoMedium';
+  font-size: 26px;
+  line-height: 140%;
+  color: $color-dark-text;
+}
+
+/* .radio-value__custom-margin {
+  margin-right: 26px;
+} */
+
+.form__input-container {
+  position: relative;
+  margin-bottom: 27px;
+}
+
+.form__input-number {
+  border: 1px solid #929699;
+  border-radius: 2px;
+  width: 268px;
+  height: 54px;
+  background-color: transparent;
+  font-size: 16px;
+  line-height: 140%;
+  color: #929699;
+  box-sizing: border-box;
+  padding-left: 10px;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+#dollar-input {
+  fill: #929699;
+  position: absolute;
+  bottom: 50%;
+  transform: translateX(-20px) translateY(10px);
+}
+
+.radio-inputs__container {
+  display: flex;
+  justify-content: space-evenly;
+  width: 268px;
+  padding-right: 25px;
+  gap: 15px;
+  margin-bottom: 29px;
+  
+}
+
+.radio-input__container-label {
+  font-size: 16px;
+  line-height: 140%;
+  color: #333B41;
+  margin-left: 10px;
+}
+
+
+.feed-contant__form-p {
+  margin-top: 32px;
+}
