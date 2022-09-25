@@ -1,3 +1,5 @@
+import { inputValidation } from '../main/main.js'
+
 const moneyInputs = document.querySelectorAll('.feed-contant__radio-input');
 const moneyLabel = document.querySelectorAll('.radio-value__number');
 const moneySvg = document.querySelectorAll('.dollar-svg');
@@ -30,3 +32,5 @@ anotherInput.addEventListener('change', function() {
     this.value = 1;
   }
 })
+
+inputValidation();

@@ -28,7 +28,12 @@ function onInput() {
 	}
 }
 
-input.addEventListener('input', onInput);
+function inputValidation() {
+  input.addEventListener('input', onInput);
+}
+
+inputValidation();
+
 
 petsSection.addEventListener('mouseover', (e) => {
   const el = e.target; 
@@ -56,3 +61,6 @@ petsSection.addEventListener('mouseout', (e) => {
 
   }
 })
+
+
+export {inputValidation};
