@@ -24,10 +24,15 @@ const devServer = (isDev) => !isDev ? {} : {
 module.exports = (develop) => ({
   mode: develop ? 'development' : 'production',
   devtool: develop ? 'inline-source-map' : 'none',
-  entry: path.resolve(__dirname, './src/index'),
+  entry: {
+    index: path.resolve(__dirname, './src/index'),
+    main: path.resolve(__dirname, './src/pages/main/main'),
+    donate: path.resolve(__dirname, './src/pages/donate/donate'),
+  },
   output: {
     path: path.resolve(__dirname, '../dist'),
-    filename: 'index.js',
+    filename: '[name].js',
+    chunkFilename: '[id].[chunkhash].js',
     assetModuleFilename: 'assets/[name][ext]',
   },
   module: {
@@ -57,10 +62,12 @@ module.exports = (develop) => ({
     new HtmlWebpackPlugin({
       template: path.resolve(__dirname, './src/pages/main/index.html'),
       filename: 'index.html',
+      chunks: ["index", "main"],
     }),
     new HtmlWebpackPlugin({
       template: path.resolve(__dirname, './src/pages/donate/donate.html'),
       filename: 'donate.html',
+      chunks: ["index", "donate"],
     }),
     new MiniCssExtractPlugin({
       filename: '[name].[contenthash].css'
