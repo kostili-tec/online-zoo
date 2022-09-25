@@ -33,10 +33,10 @@
   content: "";
   background-image: url(../assets/images/svg/roller_icon.svg);
   position: absolute;
-  -webkit-transition: all 0.2s ease;
-  -moz-transition: all 0.2s ease;
-  -o-transition: all 0.2s ease;
-  transition: all 0.2s ease;
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
   left: -14px;
   top: -14px;
   width: 40px;

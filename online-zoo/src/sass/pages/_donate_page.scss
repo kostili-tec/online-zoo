@@ -190,6 +190,7 @@
   width: 10px;
   height: 20px;
   fill: #333B41;
+  transition: ease-in 0.2s;
 }
 
 .radio-value__number {
@@ -197,6 +198,7 @@
   font-size: 26px;
   line-height: 140%;
   color: $color-dark-text;
+  transition: ease-in 0.2s;
 }
 
 /* .radio-value__custom-margin {
@@ -258,4 +260,11 @@ input[type=number] {
 
 .feed-contant__form-p {
   margin-top: 32px;
+}
+
+.checked-label {
+  color: #FE9013 ;
+}
+.checked-svg {
+  fill: #FE9013;
 }
