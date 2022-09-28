@@ -141,3 +141,14 @@
     margin-top: 10px;
   }
 }
+
+@media only screen and (min-width : 1000px) and (max-width : 1599px) { 
+  .footer-container {
+    padding: 2px 19px 0 14px;
+    box-sizing: border-box;
+  }
+
+  .autor-container {
+    transform: translateX(30px);
+  }
+}
