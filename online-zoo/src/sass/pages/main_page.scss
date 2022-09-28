@@ -519,6 +519,7 @@ body {
 .feedback-h3 {
   font-size: 36px;
   line-height: 130%;
+  font-weight: 400;
   color: $color-dark-text;
   margin: 140px 0 47px;
 }
@@ -528,6 +529,10 @@ body {
   flex-wrap: nowrap;
   gap: 30px;
   margin-bottom: 22px;
+}
+
+.feedback-border:nth-child(3) {
+  display: none;
 }
 
 .feedback-card {
@@ -751,9 +756,9 @@ body {
     transform: translateX(117px) rotate(180deg);
   }
 
-  .feedback-cards {
-    flex-wrap: wrap;
-  }
+
+
+  /////// PICK /////// 
 
   .section-pick {
     padding-top: 30px;
@@ -792,4 +797,59 @@ body {
   .pick-cards {
     margin-bottom: 44px;
   }
+
+  /////// Testimonials /////// 
+
+  .feedback-container {
+    &::after {
+      width: 196px;
+      height: 325px;
+      background-size: 196px 325px;
+      transform: translateY(87px);
+    }
+  }
+  
+  .feedback-h3 {
+    margin: 100px 0 30px;
+  }
+
+  .feedback-cards {
+    margin-bottom: 20px;
+  }
+
+  .feedback-border {
+    width: 293px;
+    height: 391px;
+  }
+
+  .feedback-card {
+    width: 289px;
+    height: 387px;
+  }
+  .feedback-border:nth-child(2) {
+    display: none;
+  }
+  .feedback-border:nth-child(3) {
+    display: flex;
+  }
+  .feedback-border:last-child {
+    display: none;
+  }
+
+  #border-line {
+    max-width: 390px;
+    margin-bottom: 52px;
+    transform: translateX(-7px); // ???
+  }
+  .feedback-cards__line {
+    max-width: 388px;    
+  }
+  .line-progress {
+    width: 75px;
+  }
+
+  #feedback-button {
+    margin-bottom: 140px;
+  }
+
 }
