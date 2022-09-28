@@ -616,6 +616,32 @@ body {
 
 
 @media only screen and (min-width : 1000px) and (max-width : 1599px) { 
+
+  .section-watch {
+    max-height: 584px;
+    background-size: cover;
+    background-position: center center;
+  }
+
+  .wath-container {
+    padding-top: 50px;
+  }
+  .watch-container__contant {
+    padding-right: 6px;
+
+  }
+
+  .h2-watch {
+    font-size: 85px;
+    margin-bottom: -38px;
+    &::before {
+      width: 367px;
+      height: 367px;
+      transform: translateX(-8px) translateY(-52px);
+    }
+  }
+
+
   #slided-btn2 {
     transform: translateX(10px) rotate(180deg);
   }
