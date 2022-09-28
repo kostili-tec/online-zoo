@@ -239,6 +239,11 @@ body {
   width: 30px;
   height: 10px;
 }
+
+#card-alligator {
+  display: none;
+}
+
 .pets-view__card {
   width: 364px;
   height: 424px;
@@ -646,6 +651,7 @@ body {
   
   .section-backstage {
     padding-top: 100px;
+    margin-bottom: 69px;
     &::after {
       background-image: none;
       display: none;
@@ -667,9 +673,83 @@ body {
     height: 408px;
   }
 
-  #slided-btn2 {
-    transform: translateX(10px) rotate(180deg);
+  /////// PETS /////// 
+
+  .section-pets{
+    height: 1075px;
+    &::before {
+      background-image: url(../assets/images/pets-section/palm_foto2.jpg);
+      height: 202px;
+      width: 194px;
+    }
+    &::after {
+      height: 180px;
+      width: 241px;
+      background-size: 241px 180px;
+    }
   }
+
+  .pets-border {
+    order: 6;
+  }
+
+  #card-panda {
+    order: 1;
+  }
+
+  #card-eagle {
+    order: 2;
+  }
+
+  #card-cheetah {
+    order: 3;
+  }
+
+  #card-gorilla {
+    order: 4;
+  }
+  
+  #card-alligator {
+    display: flex;
+    order: 5;
+  }
+
+  #card-penguin {
+    order: 6;
+  }
+
+  #card-sloth {
+    display: none;
+  }
+
+  .pets-view {
+    gap: 92px 27px;
+  }
+  .pets-border {
+    height: 354px;
+    width: 295px;
+  }
+  .pets-view__card {
+    height: 352px;
+    width: 293px;
+  }
+
+  .pets-img {
+    width: 293px;
+    height: 293px;
+  }
+
+
+  #slided-btn1 {
+    left: auto;
+    transform: translateX(-117px);
+  }
+
+  #slided-btn2 {
+    right: auto;
+    transform: translateX(117px) rotate(180deg);
+  }
+
   .feedback-cards {
     flex-wrap: wrap;
   }
