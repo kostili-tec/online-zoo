@@ -617,6 +617,7 @@ body {
 
 @media only screen and (min-width : 1000px) and (max-width : 1599px) { 
 
+  /////// WATCH ///////
   .section-watch {
     max-height: 584px;
     background-size: cover;
@@ -641,6 +642,30 @@ body {
     }
   }
 
+  /////// BACKSTAGE /////// 
+  
+  .section-backstage {
+    padding-top: 100px;
+    &::after {
+      background-image: none;
+      display: none;
+    }
+  }
+
+  .backstage-container__contant {
+    gap: 31px;
+  }
+
+  .backstage-container__img-container {
+    width: 455px;
+    height: 408px;
+    margin-top: 9px;
+  }
+  .backstage-container__img-container img{ 
+    object-fit: cover;
+    width: 455px;
+    height: 408px;
+  }
 
   #slided-btn2 {
     transform: translateX(10px) rotate(180deg);
