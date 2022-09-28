@@ -348,7 +348,7 @@ body {
 
 .pick-contant__container{
   height: 835px;
-  width: 1160px;
+  max-width: 1160px;
   background: rgba(253, 253, 255, 0.52);
   backdrop-filter: blur(2px);
   border-radius: 20px;
@@ -611,4 +611,15 @@ body {
 #feedback-button {
   align-self: flex-start;
   margin-bottom: 180px;
+}
+
+
+
+@media only screen and (min-width : 1000px) and (max-width : 1599px) { 
+  #slided-btn2 {
+    transform: translateX(10px) rotate(180deg);
+  }
+  .feedback-cards {
+    flex-wrap: wrap;
+  }
 }

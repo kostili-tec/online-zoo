@@ -111,3 +111,13 @@
   50%{background-position:right}
   100%{background-position:left}
 }
+
+@media only screen and (min-width : 1000px) and (max-width : 1599px) { 
+  .header-container{ 
+    margin: 0 30px;
+  }
+
+  .nav-ul {
+    gap: 48px;
+  }
+}
