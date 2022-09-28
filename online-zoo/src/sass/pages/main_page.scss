@@ -406,6 +406,7 @@ body {
 
 .pick-p {
   margin: 5px 0;
+  max-width: 863px;
 }
 
 #pick-p__a{
@@ -752,5 +753,43 @@ body {
 
   .feedback-cards {
     flex-wrap: wrap;
+  }
+
+  .section-pick {
+    padding-top: 30px;
+    height: 876px;
+  }
+
+  .pick-contant__container {
+    height: 796px;
+  }
+
+  .pick-h2 {
+    margin: 30px 0 10px;
+  }
+
+  .pick-contant__info {
+    margin-left: 0;
+  }
+
+  .pick-h4 {
+    margin: 10px 0 0;
+    font-weight: 400;
+  }
+  
+  .pick-p__bold {
+    max-width: 813px;
+  }
+
+  .pick-p {
+    max-width: 823px;
+  }
+
+  .pick-h3 {
+    margin: 37px 0 40px;
+  }
+
+  .pick-cards {
+    margin-bottom: 44px;
   }
 }
