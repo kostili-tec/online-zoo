@@ -277,5 +277,61 @@ input[type=number] {
 }
 
 @media only screen and (min-width : 1000px) and (max-width : 1599px) { 
+
+  .feed-h3 {
+    max-width: 778px;
+  }
+
+  .feed-p {
+    max-width: 933px;
+    margin-top: 30px;
+  }
+
+  #donation-h3 {
+    margin-bottom: 38px;
+  }
   
+  .feed-contant__container {
+    padding: 20px 40px 62px 40px;
+  }
+
+  .feed-contant__container-h2 {
+    margin-bottom: 5px;
+    margin-right: 15px;
+  }
+  
+  .feed-contant__container-subtitle {
+    margin-top: 5px;
+    margin-left: 7px;
+  }
+
+  .feed-contant__diet-container {
+    gap: 86px;
+    margin-bottom: 49px;
+  }
+
+  .feed-svg {
+    margin-right: 20px;
+  }
+  
+  .feed-contant__form-label {
+    padding-left: 25px;
+  }
+
+  .feed-contant__radio-container {
+    max-width: 810px;
+    padding: 0 8px;
+    &::after {
+      width: 96%;
+    }
+  }
+  #dollar-input1__label {
+    display: none;
+  }
+  .radio-value__container {
+    &:first-child {
+      display: none;
+    }
+  }
+
 }
