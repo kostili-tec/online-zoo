@@ -268,3 +268,14 @@ input[type=number] {
 .checked-svg {
   fill: #FE9013;
 }
+
+@media only screen and (min-width : 1000px) and (max-width : 1400px) { 
+  .section-panda {
+    margin-top: 0;
+    background-position: -173px center;
+  }
+}
+
+@media only screen and (min-width : 1000px) and (max-width : 1599px) { 
+  
+}
