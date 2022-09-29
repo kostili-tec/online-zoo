@@ -278,6 +278,10 @@ input[type=number] {
 
 @media only screen and (min-width : 1000px) and (max-width : 1599px) { 
 
+  .section-feed {
+    height: 1333px;
+  }
+
   .feed-h3 {
     max-width: 778px;
   }
@@ -293,6 +297,7 @@ input[type=number] {
   
   .feed-contant__container {
     padding: 20px 40px 62px 40px;
+    height: 918px;
   }
 
   .feed-contant__container-h2 {
@@ -317,6 +322,12 @@ input[type=number] {
   .feed-contant__form-label {
     padding-left: 25px;
   }
+  
+  .feed-contant__radio-values {
+    width: 830px;
+    gap: 60px;
+    padding-left: 23px;
+  }
 
   .feed-contant__radio-container {
     max-width: 810px;
@@ -332,6 +343,21 @@ input[type=number] {
     &:first-child {
       display: none;
     }
+    &:nth-child(3) {
+      margin-right: 0px;
+    }
+    &:nth-child(4) {
+      margin-right: 18px;
+    }
+    &:nth-child(n+5) {
+      margin-right: 15px;
+    }
+    &:nth-child(7) {
+      margin-right: 31px;
+    }
   }
 
+  .radio-inputs__container {
+    margin-bottom: 30px;
+  }
 }
