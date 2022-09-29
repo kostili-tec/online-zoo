@@ -269,14 +269,14 @@ input[type=number] {
   fill: #FE9013;
 }
 
-@media only screen and (min-width : 1000px) and (max-width : 1400px) { 
+@media only screen and (max-width : 1400px) { 
   .section-panda {
     margin-top: 0;
     background-position: -173px center;
   }
 }
 
-@media only screen and (min-width : 1000px) and (max-width : 1599px) { 
+@media only screen and (max-width : 1599px) { 
 
   .section-feed {
     height: 1333px;

@@ -6,7 +6,7 @@
   display: flex;
   justify-content: center;
   position: relative;
-  z-index: 10;
+  z-index: 11;
 }
 
 .header-container{
@@ -112,12 +112,73 @@
   100%{background-position:left}
 }
 
-@media only screen and (min-width : 1000px) and (max-width : 1599px) { 
+.burger-button {
+  display: none;
+  width: 18px;
+  height: 2px; 
+  background: $color-white;
+  border-radius: 2px;
+}
+
+@media only screen and (max-width : 1599px) { 
   .header-container{ 
     margin: 0 30px;
   }
 
   .nav-ul {
     gap: 48px;
+  }
+}
+
+@media only screen and (max-width : 999px) { 
+
+  .header {
+    height: 34px;
+  }
+
+  .header-container {
+    margin: 0 20.2px 0 20.07px;
+  }
+
+  .logo-container {
+    border: none;
+    width: 46.86px;
+    height: 29.03px;
+  }
+  .logo-h1 {
+    font-size: 12.2899px;
+    &::after {
+      width: 10.54px;
+      height: 17.56px;
+      background-size: 18.56px 13.54px;
+      left: 2px;
+      top: -18.5px;
+    }
+  }
+
+  
+  #nav-header, .header-designed {
+    display: none;
+  }
+  .burger-button {
+    display: block;
+    &::before {
+      content: "";
+      width: 18px;
+      height: 2px; 
+      background: $color-white;
+      border-radius: 2px;
+      position: absolute;
+      transform: translateY(-4px);
+    }
+    &::after {
+      content: "";
+      width: 18px;
+      height: 2px; 
+      background: $color-white;
+      border-radius: 2px;
+      position: absolute;
+      transform: translateY(4px);
+    }
   }
 }
