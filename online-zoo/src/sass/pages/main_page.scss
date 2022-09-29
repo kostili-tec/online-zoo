@@ -884,6 +884,8 @@ body {
 
   .section-backstage {
     padding-top: 60px;
+    margin-bottom: 0;
+    height: 447px;
     &::after {
       background-image: url(../assets/images/backstage-section/flower_foto1.jpg);
       background-size: 165px 482px;
@@ -917,4 +919,76 @@ body {
     margin-bottom: 20px;
     margin-left: 4px;
   }
+
+  .section-pets {
+    height: 970px;
+    &::before {
+      transform: translateX(-60px);
+    }
+
+    &::after {
+      width: 175px;
+      height: 131px;
+      background-size: 175px 131px;
+    }
+  }
+
+  .pets-view {
+    margin-bottom: 60px;
+  }
+  #slided-btn1 {
+    transform: translateX(-46px) translateY(-3px);
+  }
+
+  #slided-btn2 {
+    transform: translateX(46px) translateY(-3px) rotate(180deg);
+  }
+
+  .pets-border {
+    width: 285px;
+    height: 332px;
+  }
+
+  .pets-view__card {
+    width: 283px;
+    height: 330px;
+  }
+
+  #card-alligator, #card-penguin {
+    display: none;
+  }
+
+  .pets-img {
+    width: 285.24px;
+    height: 285.24px;
+  }
+
+  .pets-p__info {
+    font-size: 14px;
+  }
+
+  .pets-descpiption {
+    margin: 0px 4px 0px 11px;
+    height: 46.76px;
+  }
+
+  .pets-h3 {
+    font-size: 12.4695px;
+  }
+  
+  .pets-p {
+    font-size: 11.6901px;
+  }
+
+
+
+
+  .pick-cards {
+    gap: 20px;
+  }
+
+  .feedback-cards {
+    flex-wrap: wrap;
+  }
+
 }
