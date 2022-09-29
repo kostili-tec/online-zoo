@@ -881,4 +881,40 @@ body {
   #watch-button {
     align-self: flex-start;
   }
+
+  .section-backstage {
+    padding-top: 60px;
+    &::after {
+      background-image: url(../assets/images/backstage-section/flower_foto1.jpg);
+      background-size: 165px 482px;
+      height: 564px;
+      width: 134px;
+      display: block;
+    }
+  }
+  
+  .backstage-container__contant {
+    justify-content: flex-start;
+  }
+
+  .backstage-container__img-container {
+    display: none;
+  }
+  .backstage-contant {
+    max-width: 495px;
+  }
+
+  .backstage-contant__h2 {
+    margin-left: 4px;
+  }
+
+  .backstage-contant__p {
+    margin-bottom: 15px;
+  }
+  
+  #p-title__backstage {
+    margin-top: 30px;
+    margin-bottom: 20px;
+    margin-left: 4px;
+  }
 }
