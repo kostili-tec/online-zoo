@@ -853,3 +853,32 @@ body {
   }
 
 }
+
+@media only screen and (max-width : 999px) { 
+
+  .section-watch {
+    height: 373px;
+    margin-top: 0;
+  }
+
+  .watch-container__contant {
+    align-items: flex-end;
+    width: 100%;
+  }
+
+
+  .h2-watch {
+    font-size: 54.2894px;
+    width: 239px;
+    height: 237.6px;
+    margin-top: 30px;
+    &::before {
+      width: 238px;
+      height: 238px;
+      transform: translateX(-44px) translateY(-36px);
+    }
+  }
+  #watch-button {
+    align-self: flex-start;
+  }
+}
