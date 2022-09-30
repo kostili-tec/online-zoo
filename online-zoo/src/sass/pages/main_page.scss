@@ -1034,8 +1034,52 @@ body {
     }
   }
 
+  .feedback-container {
+    &::after {  // fix: нужно перенести в section
+     /*  width: 133.88px;
+      height: 206.15px;
+      background-size: 133.88px 206.15px;
+      transform: translateY(69px) translateX(10px); */
+      width: 117.88px;
+      height: 220.15px;
+      background-size: 125.88px 206.15px;
+      transform: translateY(82px) translateX(0px);
+    }
+  }
+
+  .feedback-h3 {
+    margin: 60px 0 30px;
+  }
+
   .feedback-cards {
     flex-wrap: wrap;
+    gap: 15px;
+  }
+
+  .feedback-border {
+    width: 600px;
+    height: 109px;
+  }
+
+  .feedback-card {
+    width: 596px;
+    height: 105px;
+    padding: 13px 16px 7px 12px;
+  }
+
+  .feedback-p {
+    padding-left: 3px;
+  }
+
+  #border-line {
+    display: none;
+  }
+
+  #feedback-button {
+    align-self: center;
+    width: 240px;
+    height: 54px;    
+    margin: 20px 0 80px;
   }
 
 }
