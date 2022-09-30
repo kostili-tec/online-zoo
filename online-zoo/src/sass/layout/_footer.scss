@@ -191,11 +191,60 @@
 }
 
 @media only screen and (max-width : 999px) { 
+  
+  .footer {
+    height: 282px;
+    padding: 11px 0 50px;
+  }
+
+  .footer-container {
+    padding: 0;
+  }
+
+  .footer-top__container {
+    margin-bottom: 38px;
+  }
+
+  #footer-logo {
+    margin-top: 0;
+  }
+
+  #donate-button__link {
+    margin-bottom: 60px;
+  }
+
+  #nav-footer__ul {
+    gap: 38px;
+  }
+
   .subscribe-container {
     display: none;
   }
+
   .footer-bottom__container {
+    position: relative;
+  }
+
+  .social-links__container {
+    position: absolute;
+    right: 0;
+    gap: 20px;
+    transform: translateX(10px) translateY(-93px);
+  }
+
+  .social_link__p {
     display: none;
-    flex-direction: column;
+  }
+
+  #nav-footer {
+    margin-left: 0;
+  }
+
+  #nav-footer__ul {
+    padding-left: 0;
+  }
+  
+  .autor-container {
+    transform: translateX(0);
   }
 }
