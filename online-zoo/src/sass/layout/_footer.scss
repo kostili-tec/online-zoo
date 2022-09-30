@@ -17,6 +17,40 @@
   justify-content: space-between;
 }
 
+
+.footer__logo-container {
+  width: 80px;
+  height: 50px;
+  border: 1px solid #FFFFFF;
+  border-radius: 2px;
+  position: relative;
+}
+
+.footer__logo-h1 {
+  font-family: 'RobotoRegular';
+  margin: 0;
+  margin-top: 3.55px;
+  font-size: 19.0145px;
+  line-height: 120%;
+  font-style: normal;
+  font-weight: 400;
+  text-align: center;
+  &::after{     
+    content: '';   
+    background-image: url(../assets/images/header/bamboo.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    
+    display: block;
+    position: relative;
+    left: 11px;
+    
+    top: -27px;
+    width: 10px;
+    height: 25px;        
+  }
+}
+
 #footer-logo{
   margin-top: 22px;
 }
@@ -157,7 +191,11 @@
 }
 
 @media only screen and (max-width : 999px) { 
+  .subscribe-container {
+    display: none;
+  }
   .footer-bottom__container {
     display: none;
+    flex-direction: column;
   }
 }
