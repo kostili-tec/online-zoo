@@ -361,3 +361,20 @@ input[type=number] {
     margin-bottom: 30px;
   }
 }
+
+@media only screen and (max-width : 999px) { 
+  .section-panda {
+    height: 369px;
+    background-size: 1373px 335px;
+    background-position: -272px 34px;
+  }
+
+
+
+  .feed-contant__radio-values {
+    display: none;
+  }
+  .radio-value__container:nth-child(3) {
+    display: none;
+  }
+}
