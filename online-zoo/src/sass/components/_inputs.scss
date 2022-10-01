@@ -121,3 +121,26 @@
 
 ///// ANOTHER AMOINT INPUT END  ///////
 
+@media only screen and (max-width : 639px) {
+  
+  .feed-contant__radio-input:checked + label, .feed-contant__radio-input:not(checked) + label { 
+    padding-bottom: 5px;
+    padding-left: 0;
+  }
+
+  .feed-contant__radio-input:checked + label::before, 
+  .feed-contant__radio-input:not(checked) + label::before { 
+    width: 6px;
+    height: 6px;
+    box-sizing: border-box;
+  }
+
+  .feed-contant__radio-input:checked + label::after, 
+  .feed-contant__radio-input:not(checked) + label::after { 
+    width: 20px;
+    height: 20px;
+    background-size: 20px 20px;
+    left: -7px;
+    top: -7px;
+  }
+}
