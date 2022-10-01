@@ -1156,8 +1156,57 @@ body {
     display: none;
   }
 
+  #pick-container__id {
+    max-width: 300px;
+  }
+
+  .section-pick {
+    height: 1082px;
+  }
+
+  .pick-contant__container {
+    padding: 0;
+    height: 1042px;
+  }
+
+  .pick-h2 {
+    font-size: 24px;
+    margin: 20px 0 0px;
+  }
+  
+  .pick-h4 {
+    font-size: 18px;
+    text-align: center;
+  }
+
+  .pick-p__bold, .pick-p {
+    display: none;
+  }
+
+  .pick-h3 {
+    font-size: 24px;
+    margin: 22px 0 18px;
+  }
+
   .pick-cards {
     flex-wrap: wrap;
+    margin-bottom: 30px;
+  }
+
+  #pick-card__zoo {
+    &::before {
+      top: auto;
+      transform: translateX(141px) translateY(-107px) rotate(84deg);
+    }
+    &::after {
+      top: auto;
+      transform: translateX(141px) translateY(142px) rotate(84deg);
+    }
+  }
+
+  .pick-card__h5 {
+    margin: 10px 0 20px;
+    max-height: 34px;
   }
 
   .feedback-border {
