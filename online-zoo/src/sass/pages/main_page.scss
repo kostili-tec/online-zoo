@@ -1173,7 +1173,7 @@ body {
     font-size: 24px;
     margin: 20px 0 0px;
   }
-  
+
   .pick-h4 {
     font-size: 18px;
     text-align: center;
@@ -1209,13 +1209,42 @@ body {
     max-height: 34px;
   }
 
+  .feedback-container {
+    &::after {
+      background-image: url(../assets/images/testimonials-section/leaf_mobile.png);
+      width: 51px;
+      height: 91px;
+      background-size: 51px 93px;
+      transform: translateY(27px);   
+    }
+  }
+
+  .feedback-h3 {
+    font-size: 24px;
+    margin: 30px 0 18px;
+  }
+
+  .feedback-cards {
+    margin-bottom: 10px;
+  }
+
   .feedback-border {
     width: 299px;
     height: 109px;
   }
+  
   .feedback-card {
     width: 295px;
     height: 105px;
+    padding: 9px 16px 10px 12px;
+  }
+
+  .profile-img {
+    margin-right: 5px;
+  }
+
+  #feedback-button {
+    margin: 20px 0 60px;
   }
 }
 
