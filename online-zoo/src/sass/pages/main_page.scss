@@ -1083,3 +1083,44 @@ body {
   }
 
 }
+
+@media only screen and (max-width : 639px) { 
+
+  .section-watch {
+    height: 220.96px;
+  }
+  
+  .watch-container__contant {
+    padding-right: 0;
+  }
+
+  .h2-watch {
+    font-size: 28px;
+    width: 128.13px;
+    margin-top: 25px;
+    &::before {
+      width: 119.09px;
+      height: 119.09px;  
+      transform: translateX(-19px) translateY(-19px);    
+    }
+  }
+  .pick-cards {
+    flex-wrap: wrap;
+  }
+
+  .feedback-border {
+    width: 299px;
+    height: 109px;
+  }
+  .feedback-card {
+    width: 295px;
+    height: 105px;
+  }
+}
+
+@media only screen and (max-width : 350px) { 
+  .section-watch {    
+    background-size: 383.52px 186.96px;
+    background-position: -32px 34px;
+  }
+}

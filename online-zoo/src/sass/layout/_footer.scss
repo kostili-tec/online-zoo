@@ -239,7 +239,7 @@
   #nav-footer {
     margin-left: 0;
   }
-  
+
   #nav-footer__donate {
     margin-left: 0;
   }
@@ -250,5 +250,12 @@
   
   .autor-container {
     transform: translateX(0);
+  }
+}
+
+
+@media only screen and (max-width : 639px) { 
+  .footer-bottom__container {
+    display: none;
   }
 }
