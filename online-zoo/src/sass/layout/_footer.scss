@@ -255,7 +255,57 @@
 
 
 @media only screen and (max-width : 639px) { 
+
+  .footer {
+    padding: 17px 0 50px;
+    height: 334px;
+  }
+
+  .footer-top__container {
+    justify-content: center;
+    margin-bottom: 89px;
+  }
+  
+  .footer__logo-h1 {
+    &::after {
+      left: 73.2px;
+      top: -28px;
+    }
+  }
+
+  .footer__logo-container {
+    width: 128px;
+    height: 23px;
+    border: none;
+  }
+
+  #donate-button__link {
+    margin-bottom: 25px;
+  }
+
+  .social-links__container {
+    flex-direction: row;
+    transform: translateX(-43px) translateY(-138px);
+  }
+
   .footer-bottom__container {
-    display: none;
+    flex-wrap: wrap-reverse;
+    justify-content: flex-end;
+  }
+
+  #nav-footer {
+    margin-right: 10px;
+  }
+  
+  #nav-footer__ul {
+    gap: 30px;
+  }
+
+  .autor-container {
+    margin-bottom: 30px;
+  }
+
+  .footer-p {
+    font-size: 15px;
   }
 }
