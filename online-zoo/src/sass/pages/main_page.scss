@@ -1098,12 +1098,40 @@ body {
     font-size: 28px;
     width: 128.13px;
     margin-top: 25px;
+    height: 203.6px;
     &::before {
       width: 119.09px;
       height: 119.09px;  
       transform: translateX(-19px) translateY(-19px);    
     }
   }
+
+  .section-backstage {
+    padding-top: 105px;
+    height: 427px;
+    &::after {
+      top: 40px;
+      bottom: none;
+      width: 31px;
+      height: 236px;
+      background-size: 62px 215px;
+    }
+  }
+  .backstage-contant__h2 {
+    font-size: 24px;
+    margin-left: 0;
+    margin-bottom: 0;
+  }
+  .backstage-contant__p {
+    margin-top: 10px;
+    margin-bottom: 0;
+  }
+
+  #p-title__backstage {
+    margin-top: 20px;
+    margin-bottom: 10px;
+  }
+
   .pick-cards {
     flex-wrap: wrap;
   }
