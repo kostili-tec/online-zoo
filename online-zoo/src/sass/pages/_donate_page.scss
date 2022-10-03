@@ -31,13 +31,18 @@
 
 .feed-p {
   // font-family: 'RobotoMedium';
-  font-weight: 500;
+  font-weight: 400;
   font-style: normal;
   font-size: 16px;
   line-height: 140%;
   color: $color-white;
   margin-top: 10px;
   margin-bottom: 47px;
+}
+
+.feed-p__span {
+  font-family: 'RobotoMedium';
+  font-weight: 500;
 }
 
 #donation-h3 {
