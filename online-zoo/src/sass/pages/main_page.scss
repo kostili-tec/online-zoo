@@ -11,6 +11,7 @@ body {
   max-width: 1600px;
   height: 780px;
   background: url(../assets/images/watch-section/giantPandaBG.jpg);
+  background-repeat: no-repeat;
 }
 
 .wath-container{
@@ -852,6 +853,15 @@ body {
     margin-bottom: 140px;
   }
 
+}
+
+@media only screen and (min-width : 1601px) { 
+  .section-watch {
+    background-position: center;
+    background-size: cover;
+    max-width: 100%;
+    
+  }
 }
 
 @media only screen and (max-width : 999px) { 

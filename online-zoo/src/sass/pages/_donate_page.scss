@@ -276,6 +276,14 @@ input[type=number] {
   fill: #FE9013;
 }
 
+@media only screen and (min-width : 1601px) { 
+  .section-panda {
+    margin-top: 0;
+    background-position: center;
+    background-size: cover;
+  }
+}
+
 @media only screen and (max-width : 1400px) { 
   .section-panda {
     margin-top: 0;
@@ -453,11 +461,11 @@ input[type=number] {
 
 @media only screen and (max-width : 639px) { 
 
-  .section-panda {
+/*   .section-panda {
     height: 221px;
     background-size: 766.42px 187px;
     background-position: -148px 34px;
-  }
+  } */
 
   #donation-h3 {
     font-size: 24px;
@@ -560,5 +568,14 @@ input[type=number] {
 
   .feed-contant__form-p {
     width: 301px;
+  }
+}
+
+@media only screen and (max-width : 615px) { 
+
+  .section-panda {
+    height: 221px;
+    background-size: 766.42px 187px;
+    background-position: -148px 34px;
   }
 }
