@@ -1,0 +1,65 @@
+[
+  {
+    "name": "panda",
+    "imgSrc": "./copies/images/pets-section/pandas.jpg",
+    "info": "The giant panda has an insatiable appetite for bamboo. A typical animal eats half the day—a full 12 out of every 24 hours—and relieves itself dozens of times a day. It takes 28 pounds of bamboo to satisfy a giant panda's daily dietary needs, and it hungrily plucks the stalks with elongated wrist bones that function rather like thumbs. Pandas will sometimes eat birds or rodents as well.",
+    "H3": "Giant Pandas",
+    "location": "Native to Southwest China",
+    "svgClass": "pets-food__svg-banana",
+    "svgSrc": "#banana-bamboo_icon"    
+  },
+  {
+    "name": "eagle",
+    "imgSrc": "./copies/images/pets-section/eagles.jpg",
+    "info": "Eagle is the common name for many large birds of prey of the family Accipitridae. Eagles belong to several groups of genera, some of which are closely related. Most of the 60 species of eagle are from Eurasia and Africa. Outside this area, just 14 species can be found—2 in North America, 9 in Central and South America, and 3 in Australia.<br><br> Eagles are not a natural group but denote essentially any kind of bird of prey large enough to hunt sizeable (about 50 cm long or more overall) vertebrates.",
+    "H3": "Eagles",
+    "location": "Native to South America",
+    "svgClass": "pets-food__svg-meet",
+    "svgSrc": "#meet-fish_icon"    
+  },
+  {
+    "name": "gorilla",
+    "imgSrc": "./copies/images/pets-section/gorilla.jpg",
+    "info": " Gorillas are herbivorous, predominantly ground-dwelling great apes that inhabit the tropical forests of equatorial Africa. The genus Gorilla is divided into two species: the eastern gorilla and the western gorilla, and either four or five subspecies. The DNA of gorillas is highly similar to that of humans, from 95 to 99% depending on what is included, and they are the next closest living relatives to humans after chimpanzees and bonobos.",
+    "H3": "Gorillas",
+    "location": "Native to Congo",
+    "svgClass": "pets-food__svg-banana",
+    "svgSrc": "#banana-bamboo_icon" 
+  },
+  {
+    "name": "sloth",
+    "imgSrc": "./copies/images/pets-section/two-toed.jpg",
+    "info": "The Hoffman's two-toed sloth is one of the world's slowest mammals—so sedentary that algae grows on its furry coat. The plant gives it a greenish tint that is useful camouflage in the trees of its Central and South American rain forest home. <br><br>Sloths are identified by the number of long, prominent claws that they have on each front foot. There are both two-toed and three-toed sloths.",
+    "H3": "Two-toed Sloth",
+    "location": "Mesoamerica, South America",
+    "svgClass": "pets-food__svg-banana",
+    "svgSrc": "#banana-bamboo_icon"    
+  },
+  {
+    "name": "cheetah",
+    "imgSrc": "./copies/images/pets-section/cheetah.jpg",
+    "info": "Fastest mammal on land, the cheetah can reach speeds of 60 or perhaps even 70 miles (97 or 113 kilometers) an hour over short distances. It usually chases its prey at only about half that speed, however. After a chase, a cheetah needs half an hour to catch its breath before it can eat. <br><br> These cats are nimble at high speeds, able to make quick and sudden turns in pursuit of prey. Cheetahs’ bodies are uniquely adapted to help them reach top speeds, from their long, slender limbs and hard foot pads to the flexible spine that gives them their long stride.",
+    "H3": "Cheetahs",
+    "location": "Native to Africa",
+    "svgClass": "pets-food__svg-meet",
+    "svgSrc": "#meet-fish_icon"    
+  },
+  {
+    "name": "penguin",
+    "imgSrc": "./copies/images/pets-section/penguins.jpg",
+    "info": "Penguins are flightless seabirds that live almost exclusively below the equator. Some island-dwellers can be found in warmer climates, but most—including emperor, adélie, chinstrap, and gentoo penguins—reside in and around icy Antarctica. A thick layer of blubber and tightly-packed, oily feathers are ideal for colder temperatures. <br><br>The 18 different species of penguins can widely in shape and size but all have black bodies and white bellies. This protective countershading allows them to hide from predators like leopard seals and orcas while they swim.",
+    "H3": "Penguins",
+    "location": "Native to Antarctica",
+    "svgClass": "pets-food__svg-meet",
+    "svgSrc": "#meet-fish_icon"    
+  },
+  {
+    "name": "alligator",
+    "imgSrc": "./copies/images/pets-section/alligator.jpg",
+    "info": "One look at these menacing predators—with their armored, lizard-like bodies, muscular tails, and powerful jaws—and it is obvious they are envoys from the distant past. The species, scientists say, is more than 150 million years old, managing to avoid extinction 65 million years ago when their prehistoric contemporaries, the dinosaurs, died off.",
+    "H3": "Alligators",
+    "location": "Native to Southeastern U. S.",
+    "svgClass": "pets-food__svg-meet",
+    "svgSrc": "#meet-fish_icon"    
+  }
+]
