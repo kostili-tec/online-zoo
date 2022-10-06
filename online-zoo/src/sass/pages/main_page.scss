@@ -195,6 +195,7 @@ body {
   top: 50%;
   margin-top: -31px;
   transform: translateX(-80px);
+  z-index: 10;
   cursor: pointer;
 }
 #slided-btn2{ 
@@ -202,6 +203,7 @@ body {
   top: 50%;
   margin-top: -31px;
   transform: translateX(80px) rotate(180deg);
+  z-index: 10;
   cursor: pointer;
 }
 .arrow-svg{

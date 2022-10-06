@@ -1,8 +1,10 @@
-import { createCardsContainer, createCards} from "./createCards";
+import { createCards} from "./createCards";
 
 const leftBTN = document.querySelector('#slided-btn1');
 const rightBTN = document.querySelector('#slided-btn2');
 const carousel = document.querySelector('.pets-corousel');
+
+let storeCardsArr = [];
 
 const moveLeft = () => {
   carousel.classList.add('transition-left');
@@ -16,17 +18,7 @@ const moveRight = () => {
   rightBTN.removeEventListener('click', moveRight);
 }
 
-export const caruselEvents = async () => { 
-
-  let storeCardsArr = [];
-
-  leftBTN.addEventListener('click', () => {
-    moveLeft();
-  })
-  rightBTN.addEventListener('click', () => {
-    moveRight();
-  })
-
+const carouselAnimStart = () => {
   carousel.addEventListener('animationstart', async (animationEvent) => { 
     if (animationEvent.animationName === 'move-left' || 
         animationEvent.animationName === 'move-right') {      
@@ -34,7 +26,9 @@ export const caruselEvents = async () => {
           // console.log('leftCardsArr', storeCardsArr);
         }
   })
-  
+}
+
+const carouselAnimEnd = () => {
   carousel.addEventListener('animationend', (animationEvent) => {
     if (animationEvent.animationName === 'move-left') { 
       const left = document.querySelector('#left');
@@ -64,4 +58,18 @@ export const caruselEvents = async () => {
       })
     }
   })
+}
+
+export const caruselEvents = () => { 
+
+  leftBTN.addEventListener('click', () => {
+    moveLeft();
+  });
+
+  rightBTN.addEventListener('click', () => {
+    moveRight();
+  });
+
+  carouselAnimStart();
+  carouselAnimEnd();
 }

@@ -1,19 +1,62 @@
+$gap: 90px;
+$desktop-width: 1158px;
+$small-desktop-width: 940px;
+$tablet-width: 600px;
+$mobile-width: 285.24px;
+
+@keyframes move-left {
+  from {transform: translateX(0px);}
+  to {transform: translateX($desktop-width + $gap);}
+}
+
 @keyframes move-right {
   from {transform: translateX(0px);}
-  to {transform: translateX(-1248px);}
-  }
+  to {transform: translateX(($desktop-width + $gap) * -1);}
+}
+
+.transition-left {
+  animation-name: move-left;
+  animation-duration: 1.5s;
+}
   
 .transition-right {
   animation-name: move-right;
   animation-duration: 1.5s;
 }
 
-@keyframes move-left {
-  from {transform: translateX(0px);}
-  to {transform: translateX(1248px);}
+
+@media only screen and (max-width: 1599px) {
+  @keyframes move-left {
+    from {transform: translateX(0px);}
+    to {transform: translateX($small-desktop-width + $gap);}
+  }
+
+  @keyframes move-right {
+    from {transform: translateX(0px);}
+    to {transform: translateX(($small-desktop-width + $gap) * -1);}
+  }  
 }
 
-.transition-left {
-  animation-name: move-left;
-  animation-duration: 1.5s;
+@media only screen and (max-width: 999px) { 
+  @keyframes move-left {
+    from {transform: translateX(0px);}
+    to {transform: translateX($tablet-width + $gap);}
+  }
+
+  @keyframes move-right {
+    from {transform: translateX(0px);}
+    to {transform: translateX(($tablet-width + $gap) * -1);}
+  }  
+}
+
+@media only screen and (max-width: 639px) { 
+  @keyframes move-left {
+    from {transform: translateX(0px);}
+    to {transform: translateX($mobile-width + $gap);}
+  }
+
+  @keyframes move-right {
+    from {transform: translateX(0px);}
+    to {transform: translateX(($mobile-width + $gap) * -1);}
+  } 
 }

@@ -1,4 +1,4 @@
-import { renderCards, loadCardsOnStart, createCards } from "../../js/createCards";
+import { loadCardsOnStart } from "../../js/createCards";
 import { caruselEvents } from "../../js/carousel";
 
 const cardsLeavingText = () => {

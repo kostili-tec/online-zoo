@@ -51,13 +51,13 @@ const createCard = (petsName, petsInformation, petsHeader, petsLocationInfo, src
   return petsCardBorder;
 }
 
-export const getJson = async () => {
+const getJson = async () => {
   const response = await fetch('./copies/pets-json/pets.json');
   const result = await response.json();
   return result;   
 }
 
-export const renderCards = async (container) => {
+const renderCards = async () => {
   const data = await getJson();
   const arrayCards = [];
   data.forEach(pet => {
@@ -66,10 +66,6 @@ export const renderCards = async (container) => {
   })
   return arrayCards;
 }
-
-const test = renderCards();
-console.log('test', test);
-
 
 function shuffle(array) {
   const shuffledArr = Array.from(array);
@@ -80,7 +76,10 @@ function shuffle(array) {
   return shuffledArr;
 }
 
-export const createCards = async (count = 6) => {
+export const createCards = async () => {
+  const screenWidth = document.documentElement.clientWidth;
+  let count = null;
+  screenWidth >= 1000 ? count = 6 : count = 4;
   const randomCountsArr = shuffle([...Array(7).keys()]);
   const cuttedCountsArr = randomCountsArr.slice(0, count);
   // console.log(randomCountsArr);
@@ -96,14 +95,13 @@ export const createCards = async (count = 6) => {
 }
 
 
-export const createCardsContainer = async (id, count = 6) => {
+ const createCardsContainer = async (id, count = 6) => {
   const carousel = document.querySelector('.pets-corousel');
   const container = document.createElement('div');
   container.id = id;
   container.classList.add('pets-cards__container');
 
   const cards = await createCards(count);
-  console.log(cards);
 
   cards.forEach((card) => {
     container.append(card);
@@ -126,30 +124,18 @@ export const loadCardsOnStart = () => {
   }
 }
 
+const maxWidth999 = window.matchMedia('(max-width: 999px)');
+const minWidth1000 = window.matchMedia('(min-width: 1000px)');
 
-const resizeScreen = () => {
-  const mQueryMin1000px = window.matchMedia('(min-width: 1000px)');
-
-  const countCards = (e) => {
-    if (e.matches) {
-
-    }
-  }
+function resizeScreen(e) {   
+  if (e.matches) { 
+    document.querySelector('.pets-corousel').replaceChildren();
+    loadCardsOnStart();
+  } 
 }
 
-const mQuery = window.matchMedia('(max-width: 1599px)')
-
-function handleMobilePhoneResize(e) {   
-   // Проверяем, верен ли медиа-запрос
-   if (e.matches) {     
-        // Затем выводим в консоль следующее сообщение
-        console.log('Media Query Matched!')   
-   } 
-} 
-console.log(document.documentElement.clientWidth);
-
-// Настраиваем слушателя событий
-mQuery.addEventListener('change', handleMobilePhoneResize);
+maxWidth999.addEventListener('change', resizeScreen);
+minWidth1000.addEventListener('change', resizeScreen);
 
 
 
