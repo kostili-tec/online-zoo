@@ -1,0 +1,19 @@
+@keyframes move-right {
+  from {transform: translateX(0px);}
+  to {transform: translateX(-1248px);}
+  }
+  
+.transition-right {
+  animation-name: move-right;
+  animation-duration: 1.5s;
+}
+
+@keyframes move-left {
+  from {transform: translateX(0px);}
+  to {transform: translateX(1248px);}
+}
+
+.transition-left {
+  animation-name: move-left;
+  animation-duration: 1.5s;
+}

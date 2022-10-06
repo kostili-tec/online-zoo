@@ -1,4 +1,5 @@
-import { renderCards } from "../../js/createCards";
+import { renderCards, loadCardsOnStart, createCards } from "../../js/createCards";
+import { caruselEvents } from "../../js/carousel";
 
 const cardsLeavingText = () => {
   const petsSection = document.querySelector('.section-pets');
@@ -36,63 +37,10 @@ const cardsLeavingText = () => {
   }) 
 }
 
-function shuffle(array) {
-  const shuffledArr = Array.from(array);
-  for (let i = shuffledArr.length - 1; i > 0; i--) {
-    let j = Math.floor(Math.random() * (i + 1));  
-    [shuffledArr[i], shuffledArr[j]] = [shuffledArr[j], shuffledArr[i]];
-  }
-  return shuffledArr;
-}
 
-const returnCardsArray = async () => {
-  return await renderCards();  
-}
-
-const createCardsContainer = async (id) => {
-  const carousel = document.querySelector('.pets-corousel');
-  const container = document.createElement('div');
-  container.id = id;
-  container.classList.add('pets-cards__container');
-
-  const cardsArray = await renderCards();  
-  const shuffledArray = shuffle(cardsArray);
-  console.log(shuffle(cardsArray));
-  console.log(cardsArray);
-  shuffledArray.forEach(card => {
-    container.appendChild(card);
-  })
-  carousel.append(container);
-}
-
-createCardsContainer('left');
-createCardsContainer('center');
-createCardsContainer('right');
-
-// console.log(returnCardsArray());
-
-const resizeScreen = () => {
-  const mQueryMin1000px = window.matchMedia('(min-width: 1000px)');
-
-  const countCards = (e) => {
-    if (e.matches) {
-
-    }
-  }
-}
-
-const mQuery = window.matchMedia('(max-width: 1599px)')
-
-function handleMobilePhoneResize(e) {   
-   // Проверяем, верен ли медиа-запрос
-   if (e.matches) {     
-        // Затем выводим в консоль следующее сообщение
-        console.log('Media Query Matched!')   
-   } 
-} 
-
-// Настраиваем слушателя событий
-mQuery.addEventListener('change', handleMobilePhoneResize)
 
 cardsLeavingText();
 
+loadCardsOnStart();
+
+caruselEvents();

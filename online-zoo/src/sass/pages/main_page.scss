@@ -237,9 +237,9 @@ body {
   flex-shrink: 0;
 }
 
-#card-alligator {
+/* #card-alligator {
   display: none;
-}
+} */
 
 .pets-card {
   width: 364px;
@@ -692,11 +692,20 @@ body {
     }
   }
 
+  .pets-carousel__container, .pets-cards__container {
+    width: 940px;
+    height: 801px;
+  }
+
+  .pets-cards__container {
+
+  }
+
   .pets-border {
     order: 6;
   }
 
-  #card-panda {
+ /*  #card-panda {
     order: 1;
   }
 
@@ -723,7 +732,7 @@ body {
 
   #card-sloth {
     display: none;
-  }
+  } */
 
  
 
@@ -952,6 +961,11 @@ body {
     transform: translateX(46px) translateY(-3px) rotate(180deg);
   }
 
+  .pets-carousel__container, .pets-cards__container {
+    width: 600px;
+    height: 756px;
+  }
+
   .pets-border {
     width: 285px;
     height: 332px;
@@ -962,9 +976,9 @@ body {
     height: 330px;
   }
 
-  #card-alligator, #card-penguin {
+/*   #card-alligator, #card-penguin {
     display: none;
-  }
+  } */
 
   .pets-img {
     width: 285.24px;
@@ -1153,6 +1167,11 @@ body {
       height: 68px;
       background-size: 85px 71px;
     }
+  }
+
+  .pets-carousel__container, .pets-cards__container {
+    width: 285.24px;
+    height: 1388px;
   }
 
   .pets-cards__container {
