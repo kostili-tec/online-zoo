@@ -1,3 +1,6 @@
+const maxWidth999 = window.matchMedia('(max-width: 999px)');
+const minWidth1000 = window.matchMedia('(min-width: 1000px)');
+
 const createCard = (petsName, petsInformation, petsHeader, petsLocationInfo, srcImg, svgClass, svgSrc) => {
   const petsCardBorder = document.createElement('div');
   petsCardBorder.classList.add('pets-border');
@@ -16,7 +19,7 @@ const createCard = (petsName, petsInformation, petsHeader, petsLocationInfo, src
 
   const petsInfo = document.createElement('p');
   petsInfo.classList.add('pets-p__info');
-  petsInfo.textContent = `${petsInformation}`;
+  petsInfo.innerHTML = petsInformation;
 
   const petsDescription = document.createElement('div');
   petsDescription.classList.add('pets-description');
@@ -76,24 +79,18 @@ function shuffle(array) {
   return shuffledArr;
 }
 
-export const createCards = async () => {
-  const screenWidth = document.documentElement.clientWidth;
-  let count = null;
-  screenWidth >= 1000 ? count = 6 : count = 4;
+export const createCards = async (count) => {
   const randomCountsArr = shuffle([...Array(7).keys()]);
   const cuttedCountsArr = randomCountsArr.slice(0, count);
   // console.log(randomCountsArr);
   const cardsArray = await renderCards();  
   
   const cuttedCarsArray = [];
-
   cuttedCountsArr.forEach((item) => {
     cuttedCarsArray.push(cardsArray[item]);
   })
-
   return cuttedCarsArray;
 }
-
 
  const createCardsContainer = async (id, count = 6) => {
   const carousel = document.querySelector('.pets-corousel');
@@ -109,33 +106,27 @@ export const createCards = async () => {
   carousel.append(container);
 }
 
-
 export const loadCardsOnStart = () => {
-  const screenWidth = document.documentElement.clientWidth;
 
-  if (screenWidth >= 1000) {
-    createCardsContainer('left', 6);
-    createCardsContainer('center', 6);
-    createCardsContainer('right', 6);
-  } else {
+  if (maxWidth999.matches) {
     createCardsContainer('left', 4);
     createCardsContainer('center', 4);
     createCardsContainer('right', 4);
+  } else {
+    createCardsContainer('left', 6);
+    createCardsContainer('center', 6);
+    createCardsContainer('right', 6);
   }
 }
 
-const maxWidth999 = window.matchMedia('(max-width: 999px)');
-const minWidth1000 = window.matchMedia('(min-width: 1000px)');
 
 function resizeScreen(e) {   
   if (e.matches) { 
-    document.querySelector('.pets-corousel').replaceChildren();
-    loadCardsOnStart();
+    // console.log(e.media);
+    document.querySelector('.pets-corousel').replaceChildren();  
+      loadCardsOnStart();    
   } 
 }
 
 maxWidth999.addEventListener('change', resizeScreen);
 minWidth1000.addEventListener('change', resizeScreen);
-
-
-

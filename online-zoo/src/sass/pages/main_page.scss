@@ -282,7 +282,8 @@ body {
 
 .pets-p__info {
   position: absolute;
-  color: $color-white;
+  color: transparent;
+  background-color: transparent;
   font-family: 'RobotoLight';
   line-height: 140%;
   transform: translateY(360px);
@@ -290,10 +291,17 @@ body {
   text-align: justify;
   z-index: -1;
   padding: 10px;
+  overflow-y: scroll;
+  height: 350px;
+  box-sizing: border-box;
+  &::-webkit-scrollbar {
+    display: none;
+  }
 }
 
 .pets-p__info-show {
   transform: translateY(0px);
+  color: $color-white;
   z-index: 1;
 }
 
@@ -306,6 +314,7 @@ body {
   justify-content: space-between;
   align-items: center;
   margin: 8px 12px 0 16px;
+  z-index: 10;
 }
 
 .pets-text {
@@ -699,43 +708,6 @@ body {
     height: 801px;
   }
 
-  .pets-cards__container {
-
-  }
-
-  .pets-border {
-    order: 6;
-  }
-
- /*  #card-panda {
-    order: 1;
-  }
-
-  #card-eagle {
-    order: 2;
-  }
-
-  #card-cheetah {
-    order: 3;
-  }
-
-  #card-gorilla {
-    order: 4;
-  }
-  
-  #card-alligator {
-    display: flex;
-    order: 5;
-  }
-
-  #card-penguin {
-    order: 6;
-  }
-
-  #card-sloth {
-    display: none;
-  } */
-
  
 
   .pets-cards__container{
@@ -753,6 +725,10 @@ body {
   .pets-img {
     width: 293px;
     height: 293px;
+  }
+
+  .pets-p__info {
+    height: 280px;
   }
 
 
@@ -989,6 +965,7 @@ body {
 
   .pets-p__info {
     font-size: 14px;
+    height: 270px;
   }
 
   .pets-description {
