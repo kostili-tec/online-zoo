@@ -1,5 +1,4 @@
-const maxWidth999 = window.matchMedia('(max-width: 999px)');
-const minWidth1000 = window.matchMedia('(min-width: 1000px)');
+import { maxWidth999, minWidth1000 } from "./mediaQuary";
 
 const createCard = (petsName, petsInformation, petsHeader, petsLocationInfo, srcImg, svgClass, svgSrc) => {
   const petsCardBorder = document.createElement('div');
@@ -118,15 +117,3 @@ export const loadCardsOnStart = () => {
     createCardsContainer('right', 6);
   }
 }
-
-
-function resizeScreen(e) {   
-  if (e.matches) { 
-    // console.log(e.media);
-    document.querySelector('.pets-corousel').replaceChildren();  
-      loadCardsOnStart();    
-  } 
-}
-
-maxWidth999.addEventListener('change', resizeScreen);
-minWidth1000.addEventListener('change', resizeScreen);

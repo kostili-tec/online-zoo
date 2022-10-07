@@ -1,5 +1,7 @@
 import { loadCardsOnStart } from "../../js/createCards";
 import { caruselEvents } from "../../js/carousel";
+import { rangeInputEvents } from "../../js/inputCarousel";
+import { widthListeners } from "../../js/mediaQuary";
 
 const cardsLeavingText = () => {
   const petsSection = document.querySelector('.section-pets');
@@ -43,4 +45,8 @@ cardsLeavingText();
 
 loadCardsOnStart();
 
+widthListeners();
+
 caruselEvents();
+
+rangeInputEvents();
