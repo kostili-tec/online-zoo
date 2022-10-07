@@ -5,6 +5,11 @@ export const rangeInputEvents = () => {
 
   const translateXDesktop = 298; 
   const translateXSmallDesktop = 323; 
+
+  const desktopArr = Array(9).fill().map((item, index) => index * translateXDesktop);
+  const smallDesktopArr = Array(9).fill().map((item, index) => index * translateXSmallDesktop);
+  console.log(desktopArr);
+  console.log(smallDesktopArr);
   
   rangeInput.addEventListener('input', (e) => {
     let target = e.target;
@@ -17,7 +22,12 @@ export const rangeInputEvents = () => {
     }
     
     if (target.value) {
-     feedbackCarousel.style.transform = `translateX(${(translateX * target.value) * -1}px)`
+      if (maxWidth1599.matches) {
+        feedbackCarousel.style.transform = `translateX(${(smallDesktopArr[target.value]) * -1}px)`;
+      } else {
+        feedbackCarousel.style.transform = `translateX(${(desktopArr[target.value]) * -1}px)`;
+      }
+    //  feedbackCarousel.style.transform = `translateX(${(translateX * target.value) * -1}px)`
     }
   })
 }
