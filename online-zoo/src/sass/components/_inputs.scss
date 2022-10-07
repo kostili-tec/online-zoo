@@ -121,6 +121,96 @@
 
 ///// ANOTHER AMOINT INPUT END  ///////
 
+#range-slider__input {
+  -webkit-appearance: none;
+  width: 597px;
+  height: 6px;
+  background: transparent;
+  border-radius: 5px;
+  border: none;
+  &::-webkit-slider-thumb{
+    -webkit-appearance: none;
+    width: 115.19px;
+    height: 6px;
+    border-radius: 5px;
+    background: #FE9013;
+    cursor: ew-resize;
+    box-shadow: 0 0 2px 0 #555;
+    transition: background .3s ease-in-out;
+    &:hover {
+      background: $color-orange-hover;
+    }
+  } 
+  &::-moz-range-thumb{
+    -webkit-appearance: none;
+    width: 115.19px;
+    height: 6px;
+    border-radius: 5px;
+    background: #FE9013;
+    cursor: ew-resize;
+    box-shadow: 0 0 2px 0 #555;
+    transition: background .3s ease-in-out;
+    &:hover {
+      background: $color-orange-hover;
+    }
+  }
+  &::-ms-thumb {
+    -webkit-appearance: none;
+    width: 115.19px;
+    height: 6px;
+    border-radius: 5px;
+    background: #FE9013;
+    cursor: ew-resize;
+    box-shadow: 0 0 2px 0 #555;
+    transition: background .3s ease-in-out;
+    &:hover {
+      background: $color-orange-hover;
+    }
+  }
+
+  &::-webkit-slider-runnable-track  {
+    -webkit-appearance: none;
+    width: 100%;
+    box-shadow: none;
+    border: none;
+    border-radius: 5px;
+    background: #F5F7F6;
+  }
+  &::-moz-range-track  {
+    -webkit-appearance: none;
+    width: 100%;
+    box-shadow: none;
+    border: none;
+    border-radius: 5px;
+    background: #F5F7F6;
+  }
+  &::-ms-track  {
+    -webkit-appearance: none;
+    width: 100%;
+    box-shadow: none;
+    border: none;
+    border-radius: 5px;
+    background: #F5F7F6;
+  }
+}
+
+@media only screen and (max-width : 1599px) { 
+  #range-slider__input {
+    -webkit-appearance: none;
+    width: 388px;
+    &::-webkit-slider-thumb{     
+      width: 75px;
+    } 
+    &::-moz-range-thumb{     
+      width: 75px;
+    } 
+    &::-ms-thumb{     
+      width: 75px;
+    } 
+  }
+}
+
+
 @media only screen and (max-width : 639px) {
   
   .feed-contant__radio-input:checked + label, .feed-contant__radio-input:not(checked) + label { 
