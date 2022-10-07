@@ -35,7 +35,7 @@ const createCard = (petsName, petsInformation, petsHeader, petsLocationInfo, src
   petsText.appendChild(petsH3);
   petsText.appendChild(petsLocation);
 
-  const svgFood = document.createElement('svg');
+  const svgFood = document.createElementNS('http://www.w3.org/2000/svg', 'svg');
   svgFood.classList.add('icon-svg', `${svgClass}`);
   svgFood.innerHTML = `<use xlink:href="./copies/images/svg/sprite.svg${svgSrc}"></use>`;
 
