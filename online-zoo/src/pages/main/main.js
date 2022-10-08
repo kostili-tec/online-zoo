@@ -1,7 +1,7 @@
 import { loadCardsOnStart } from "../../js/createCards";
-import { caruselEvents } from "../../js/carousel";
+import { caruselEvents } from "../../js/petsCarousel";
 import { rangeInputEvents } from "../../js/inputCarousel";
-import { widthListeners } from "../../js/mediaQuary";
+import { widthListeners } from "../../js/mediaQuery";
 
 const cardsLeavingText = () => {
   const petsSection = document.querySelector('.section-pets');

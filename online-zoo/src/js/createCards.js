@@ -1,4 +1,4 @@
-import { maxWidth999, minWidth1000 } from "./mediaQuary";
+import { mediaQuery } from "./mediaQuery";
 
 const createCard = (petsName, petsInformation, petsHeader, petsLocationInfo, srcImg, svgClass, svgSrc) => {
   const petsCardBorder = document.createElement('div');
@@ -107,7 +107,7 @@ export const createCards = async (count) => {
 
 export const loadCardsOnStart = () => {
 
-  if (maxWidth999.matches) {
+  if (mediaQuery.tablet.matches) {
     createCardsContainer('left', 4);
     createCardsContainer('center', 4);
     createCardsContainer('right', 4);
