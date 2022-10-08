@@ -2,6 +2,7 @@ import { loadCardsOnStart } from "../../js/createCards";
 import { caruselEvents } from "../../js/petsCarousel";
 import { rangeInputEvents } from "../../js/inputCarousel";
 import { widthListeners } from "../../js/mediaQuery";
+import { popupEvents } from "../../js/popup";
 
 const cardsLeavingText = () => {
   const petsSection = document.querySelector('.section-pets');
@@ -50,3 +51,5 @@ widthListeners();
 caruselEvents();
 
 rangeInputEvents();
+
+popupEvents();

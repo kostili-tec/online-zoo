@@ -603,6 +603,10 @@ body {
   color: #767474;
   max-height: 309px;
   overflow: hidden;
+  overflow-y: scroll;
+  &::-webkit-scrollbar {
+    display: none;
+  }
 }
 
 #border-line {

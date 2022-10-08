@@ -1,0 +1,76 @@
+@media only screen and (max-width: 999px) { 
+
+  .popup__section {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);    
+    z-index: 100;
+    background:rgba(0, 0, 0, 0.692);
+    animation: open-animation .3s linear;
+  }
+  
+  #close-animation {
+    animation: close-animation .3s linear;
+  }
+  
+  .popup__close-button {
+    width: 33px;
+    height: 33px;
+    transform: translate(151px, -205px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    cursor: pointer;
+  }
+  
+  .close-button__span {
+    background: $color-bg-pick-section;
+    width: 18px;
+    height: 2px;
+    &:first-child {
+      transform: rotate(-45deg);
+    }
+    &:last-child {
+      transform: rotate(45deg);
+      margin-top: -2px;
+    }
+  }
+  
+  .popup__feedback-border {
+    width: 267px;
+    height: 391px;
+    position: absolute;
+    transition: ease-in 0.2s;
+  }
+  
+  .popup__feedback-card {
+    width: 263px;
+    height: 387px;
+  }
+
+  @keyframes open-animation {
+    from {      
+      opacity: 0;
+    }
+    to {     
+      opacity: 1;	
+    }
+  }
+
+  @keyframes close-animation {
+    from {      
+      opacity: 1;
+    }
+    to {     
+      opacity: 0;	
+    }
+  }
+
+}
