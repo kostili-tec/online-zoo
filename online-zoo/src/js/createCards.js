@@ -81,7 +81,6 @@ function shuffle(array) {
 export const createCards = async (count) => {
   const randomCountsArr = shuffle([...Array(7).keys()]);
   const cuttedCountsArr = randomCountsArr.slice(0, count);
-  // console.log(randomCountsArr);
   const cardsArray = await renderCards();  
   
   const cuttedCarsArray = [];

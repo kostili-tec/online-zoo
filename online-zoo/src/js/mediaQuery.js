@@ -48,10 +48,6 @@ const mediaQueryListeners = (e) => {
 }
 
 export const widthListeners = () => {
-
-  // maxWidth999.addEventListener('change', resizeScreenCarousel);
-  // minWidth1000.addEventListener('change', resizeScreenCarousel);
-
   mediaQuery.smallDesktop.addEventListener('change', mediaQueryListeners);
   mediaQuery.desktop.addEventListener('change', mediaQueryListeners);
   mediaQuery.tablet.addEventListener('change', mediaQueryListeners);

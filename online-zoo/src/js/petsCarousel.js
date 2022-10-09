@@ -23,7 +23,6 @@ const carouselAnimStart = () => {
     if (animationEvent.animationName === 'move-left' || 
         animationEvent.animationName === 'move-right') {      
           storeCardsArr = await createCards();
-          // console.log('leftCardsArr', storeCardsArr);
         }
   })
 }
