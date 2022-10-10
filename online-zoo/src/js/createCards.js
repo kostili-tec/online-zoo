@@ -119,15 +119,15 @@ export const createCards = async (count) => {
   carousel.append(container);
 }
 
-export const loadCardsOnStart = () => {
+export const loadCardsOnStart = async () => {
 
   if (mediaQuery.tablet.matches) {
-    createCardsContainer('left', 4);
-    createCardsContainer('center', 4);
-    createCardsContainer('right', 4);
+   await createCardsContainer('left', 4);
+   await createCardsContainer('center', 4);
+   await createCardsContainer('right', 4);
   } else {
-    createCardsContainer('left', 6);
-    createCardsContainer('center', 6);
-    createCardsContainer('right', 6);
+    await createCardsContainer('left', 6);
+    await createCardsContainer('center', 6);
+    await createCardsContainer('right', 6);
   }
 }
