@@ -1,11 +1,6 @@
 import { loadCardsOnStart } from "./createCards";
 import { popupListener } from "./popup";
 
-export const maxWidth999 = window.matchMedia('(max-width: 999px)');
-export const minWidth1000 = window.matchMedia('(min-width: 1000px)');
-export const maxWidth1599 = window.matchMedia('(max-width: 1599px)');
-export const minWidth1600 = window.matchMedia('(min-width: 1600px) and (max-width: 2500px)');
-
 export const mediaQuery = {
   mobile: window.matchMedia('(max-width: 640px)'),
   tablet: window.matchMedia('(min-width: 641px) and (max-width: 999px)'),
@@ -21,17 +16,13 @@ function resizeScreenCarousel(e) {
   } 
 }
 
-function resizeScreenFeedback(e) {
+function resizeScreenFeedback() {
   let lastInputValue = null;
   const feedbackCarousel = document.querySelector('.feedback-cards__carousel');
   const rangeInput = document.querySelector('#range-slider__input');
 
-  if (mediaQuery.mobile.matches) { 
-    feedbackCarousel.removeEventListener('click', popupListener);
-    feedbackCarousel.addEventListener('click', popupListener);
-  }
 
-  if (mediaQuery.tablet.matches) { 
+  if (mediaQuery.tablet.matches || mediaQuery.mobile.matches) { 
     lastInputValue = rangeInput.value;
     feedbackCarousel.style.transform = `translateX(0px)`;
     feedbackCarousel.removeEventListener('click', popupListener);
