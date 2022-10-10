@@ -46,6 +46,28 @@ $mobile-width: 285.24px;
   @keyframes move-right {
     from {transform: translateX(0px);}
     to {transform: translateX(($tablet-width + $gap) * -1);}
+  }
+
+  @keyframes header-open {
+    from {transform: translateX(100%);}
+    to {transform: translateX(0);}
+  }
+  
+  @keyframes header-close {
+    from {transform: translateX(0);}
+    to {transform: translateX(100%);}
+  }
+  
+  .menu-container__open {
+    animation-name: header-open;
+    animation-duration: 0.4s;
+    animation-fill-mode: forwards;
+  }
+  
+  .menu-container__close {
+    animation-name: header-close;
+    animation-duration: 0.4s;
+    animation-fill-mode: forwards;
   }  
 }
 

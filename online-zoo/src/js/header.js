@@ -4,13 +4,24 @@ const burgerMenu = document.querySelector('.menu-container');
 const burgerOverlay = document.querySelector('.burger-menu__overlay');
 
 function toggleMenu() {
+  let isOpen = false;
   burgerButton.addEventListener('click', () => {
-    burgerMenu.classList.toggle('menu-container__show');
+    if (!isOpen) {
+      burgerMenu.classList.remove('menu-container__close');
+      burgerMenu.classList.add('menu-container__open');
+      isOpen = true;
+    } else {
+      burgerMenu.classList.remove('menu-container__open');
+      burgerMenu.classList.add('menu-container__close');
+      isOpen = false;
+    }
     burgerLines.classList.toggle('burger-button__lines-open');
     burgerOverlay.classList.toggle('burger-menu__overlay-active');
   })
   burgerOverlay.addEventListener('click', () => {
-    burgerMenu.classList.toggle('menu-container__show');
+    isOpen = false;
+    burgerMenu.classList.remove('menu-container__open');
+    burgerMenu.classList.add('menu-container__close');    
     burgerLines.classList.toggle('burger-button__lines-open');
     burgerOverlay.classList.toggle('burger-menu__overlay-active');
   })

@@ -181,7 +181,6 @@
   }
 
   .menu-container {
-    visibility: hidden;
     position: absolute;
     flex-direction: column;
     height: 329px;
@@ -193,12 +192,6 @@
     transform: translateX(100%);
     justify-content: flex-start; 
     z-index: 100;  
-    transition: ease-in 0.4s;
-  }
-
-  .menu-container__show {
-    visibility: visible;
-    transform: translateX(0);
   }
 
   #logo-nav {
