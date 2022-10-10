@@ -81,7 +81,22 @@ function shuffle(array) {
 export const createCards = async (count) => {
   const randomCountsArr = shuffle([...Array(7).keys()]);
   const cuttedCountsArr = randomCountsArr.slice(0, count);
-  const cardsArray = await renderCards();  
+  const cardsArray = await renderCards(); 
+  
+  cardsArray.forEach((card) => {
+    card.addEventListener('mouseover', (e) => {
+      const infoAnimal = card.querySelector('.pets-p__info');
+      const imgAnimal = card.querySelector('.pets-img');
+      infoAnimal.classList.add('pets-p__info-show');
+      imgAnimal.classList.add('pets-img__hover');
+    })
+    card.addEventListener('mouseout', () => {
+      const infoAnimal = card.querySelector('.pets-p__info');
+      const imgAnimal = card.querySelector('.pets-img');
+      infoAnimal.classList.remove('pets-p__info-show');
+      imgAnimal.classList.remove('pets-img__hover');
+    })
+  })
   
   const cuttedCarsArray = [];
   cuttedCountsArr.forEach((item) => {
