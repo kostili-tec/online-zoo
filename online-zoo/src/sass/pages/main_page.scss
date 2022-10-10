@@ -294,6 +294,7 @@ body {
   overflow-y: scroll;
   height: 350px;
   box-sizing: border-box;
+  cursor: ns-resize;
   &::-webkit-scrollbar {
     display: none;
   }
@@ -604,6 +605,7 @@ body {
   max-height: 309px;
   overflow: hidden;
   overflow-y: scroll;
+  cursor: ns-resize;
   &::-webkit-scrollbar {
     display: none;
   }
