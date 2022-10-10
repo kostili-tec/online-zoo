@@ -64,11 +64,13 @@ module.exports = (develop) => ({
       template: path.resolve(__dirname, './src/pages/main/index.html'),
       filename: 'index.html',
       chunks: ["index", "main"],
+      favicon: './src/assets/images/panda_icon.ico'
     }),
     new HtmlWebpackPlugin({
       template: path.resolve(__dirname, './src/pages/donate/donate.html'),
       filename: 'donate.html',
       chunks: ["index", "donate"],
+      favicon: './src/assets/images/panda_icon.ico'
     }),
     new MiniCssExtractPlugin({
       filename: '[name].[contenthash].css'
