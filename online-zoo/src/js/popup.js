@@ -42,18 +42,11 @@ const createPopup = (element) => {
   return popupSection;
 }
 
-export const popupEvents = () => {
-  if (mediaQuery.tablet.matches || mediaQuery.mobile.matches) {
-    
-    const feedbackCards = document.querySelector('.feedback-cards__carousel');
-  
-    feedbackCards.addEventListener('click', (e) => {
-      if (e.target.closest('.feedback-border')) {
-        let feedbackDiv = e.target.closest('.feedback-border');
-        let clonedPopup = createPopup(feedbackDiv);
-  
-        showPopup(clonedPopup);
-      }
-    })
-  }  
+export const popupListener = (e) => {
+  if (e.target.closest('.feedback-border')) {
+    let feedbackDiv = e.target.closest('.feedback-border');
+    let clonedPopup = createPopup(feedbackDiv);
+
+    showPopup(clonedPopup);
+  }
 }

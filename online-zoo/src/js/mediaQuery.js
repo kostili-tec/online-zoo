@@ -1,4 +1,5 @@
 import { loadCardsOnStart } from "./createCards";
+import { popupListener } from "./popup";
 
 export const maxWidth999 = window.matchMedia('(max-width: 999px)');
 export const minWidth1000 = window.matchMedia('(min-width: 1000px)');
@@ -25,15 +26,24 @@ function resizeScreenFeedback(e) {
   const feedbackCarousel = document.querySelector('.feedback-cards__carousel');
   const rangeInput = document.querySelector('#range-slider__input');
 
+  if (mediaQuery.mobile.matches) { 
+    feedbackCarousel.removeEventListener('click', popupListener);
+    feedbackCarousel.addEventListener('click', popupListener);
+  }
+
   if (mediaQuery.tablet.matches) { 
     lastInputValue = rangeInput.value;
     feedbackCarousel.style.transform = `translateX(0px)`;
+    feedbackCarousel.removeEventListener('click', popupListener);
+    feedbackCarousel.addEventListener('click', popupListener);
   }  
 
   if (mediaQuery.desktop.matches) {
     feedbackCarousel.style.transform = `translateX(${(rangeInput.value * 298) * -1}px)`;
+    feedbackCarousel.removeEventListener('click', popupListener);
   }
   if (mediaQuery.smallDesktop.matches) {
+    feedbackCarousel.removeEventListener('click', popupListener);
     if (lastInputValue === null) {
       feedbackCarousel.style.transform = `translateX(${(rangeInput.value * 323) * -1}px)`;
     } else {
@@ -44,11 +54,23 @@ function resizeScreenFeedback(e) {
 
 const mediaQueryListeners = (e) => {
   resizeScreenCarousel(e);
-  resizeScreenFeedback(e);
+  resizeScreenFeedback();
 }
 
 export const widthListeners = () => {
   mediaQuery.smallDesktop.addEventListener('change', mediaQueryListeners);
   mediaQuery.desktop.addEventListener('change', mediaQueryListeners);
   mediaQuery.tablet.addEventListener('change', mediaQueryListeners);
+}
+
+export const mediaQuaryCheckScreenOnLoad = () => {
+  document.addEventListener('DOMContentLoaded', () => {
+    const feedbackCarousel = document.querySelector('.feedback-cards__carousel');
+    if (mediaQuery.smallDesktop.matches || mediaQuery.desktop.matches) { 
+      feedbackCarousel.removeEventListener('click', popupListener);
+    }
+    if (mediaQuery.tablet.matches || mediaQuery.mobile.matches) {
+      feedbackCarousel.addEventListener('click', popupListener);
+    }
+  })
 }
